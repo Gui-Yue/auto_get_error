@@ -1,0 +1,347 @@
+asm
+[  806s] java.lang.IllegalArgumentException: Cannot find JAR 'asm-all.jar' required by module 'gradle-launcher' using classpath or distribution directory '/usr/share/gradle'
+[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.findDependencyJar(DefaultModuleRegistry.java:262)
+[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.findDependencyJars(DefaultModuleRegistry.java:152)
+[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.module(DefaultModuleRegistry.java:142)
+[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.loadOptionalModule(DefaultModuleRegistry.java:122)
+[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.loadModule(DefaultModuleRegistry.java:106)
+[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.getModule(DefaultModuleRegistry.java:86)
+[  806s] 	at org.gradle.api.internal.DefaultClassPathProvider.findClassPath(DefaultClassPathProvider.java:32)
+[  806s] 	at org.gradle.api.internal.DefaultClassPathRegistry.getClassPath(DefaultClassPathRegistry.java:34)
+[  806s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:49)
+[  806s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+[  806s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+[  806s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=asm -Dfile.encoding=UTF-8 --parallel --max-workers=2 jar javadoc -x :asm-test:compileJava -x :asm-test:javadoc returned exit code 1
+[  806s] make[1]: Leaving directory '/usr/src/packages/BUILD'
+[  806s] make[1]: *** [debian/rules:16: override_dh_auto_build] Error 25
+[  806s] make: *** [debian/rules:6: build] Error 2
+
+
+bnd
+[ 1359s] 	at org.gradle.launcher.Main.doAction(Main.java:33)
+[ 1359s] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+[ 1359s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ 1359s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ 1359s] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ 1359s] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[ 1359s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+[ 1359s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+[ 1359s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+[ 1359s] 
+[ 1359s] 
+[ 1359s] * Get more help at https://help.gradle.org
+[ 1359s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=bnd -Dfile.encoding=UTF-8 :biz.aQute.bnd:assemble :biz.aQute.launcher:assemble :biz.aQute.junit:assemble :biz.aQute.bnd.gradle:assemble -x :biz.aQute.tester:compileJava -x :biz.aQute.tester.junit-platform:compileJava -x :demo:compileJava -x :demo:jar -x :cnf:jar returned exit code 1
+[ 1359s] make[1]: *** [debian/rules:50: override_dh_auto_build] Error 25
+[ 1359s] make[1]: Leaving directory '/usr/src/packages/BUILD'
+[ 1359s] make: *** [debian/rules:10: build] Error 2
+
+
+ceph
+[ 2551s]                  from /usr/src/packages/BUILD/src/osd/osd_types.h:46:
+[ 2551s] /usr/src/packages/BUILD/src/include/rados/librados.hpp:105:54: warning: 'template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator' is deprecated [-Wdeprecated-declarations]
+[ 2551s]   105 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
+[ 2551s]       |                                                      ^~~~~~~~
+[ 2551s] /usr/include/c++/12/bits/stl_iterator_base_types.h:127:34: note: declared here
+[ 2551s]   127 |     struct _GLIBCXX17_DEPRECATED iterator
+[ 2551s]       |                                  ^~~~~~~~
+[ 2557s] In file included from /usr/src/packages/BUILD/src/include/Context.h:19,
+[ 2557s]                  from /usr/src/packages/BUILD/src/msg/Message.h:24,
+[ 2557s]                  from /usr/src/packages/BUILD/src/messages/MMonGetMap.h:18,
+[ 2557s]                  from /usr/src/packages/BUILD/src/mon/MonClient.cc:22:
+[ 2557s] /usr/src/packages/BUILD/src/osd/osd_types.h: In lambda function:
+[ 2557s] /usr/src/packages/BUILD/src/common/dout.h:179:56: error: call to non-'constexpr' function 'ceph::dout::dynamic_marker_t<T> ceph::dout::need_dynamic(T&&) [with T = unsigned int]'
+[ 2557s]   179 |     dout_impl(pdpp->get_cct(), ceph::dout::need_dynamic(pdpp->get_subsys()), v) \
+[ 2557s]       |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+[ 2557s] /usr/src/packages/BUILD/src/common/dout.h:155:58: note: in definition of macro 'dout_impl'
+
+
+dpkg
+[   50s] [43/199] installing libpcre2-16-0-10.39-2
+[   51s] Processing triggers for libc-bin (2.36-5) ...
+[   51s] [44/199] installing libpcre2-32-0-10.39-2
+[   51s] Processing triggers for libc-bin (2.36-5) ...
+[   51s] [45/199] installing libpcre2-8-0-10.39-2
+[   51s] Processing triggers for libc-bin (2.36-5) ...
+[   51s] [46/199] installing libpcre3-2:8.39-13
+[   52s] Processing triggers for libc-bin (2.36-5) ...
+[   52s] [47/199] installing libpipeline1-1.5.4-1
+[   52s] dpkg-deb (subprocess): ZSTD_decompressStream error : Unknown frame descriptor 
+[   52s] /bin/tar: This does not look like a tar archive
+[   52s] /bin/tar: Exiting with failure status due to previous errors
+[   52s] dpkg-deb: error: tar subprocess returned error exit status 2
+[   52s] dpkg: error processing archive .init_b_cache/libpipeline1.deb (--install):
+[   52s]  dpkg-deb --control subprocess returned error exit status 2
+[   52s] Errors were encountered while processing:
+
+
+dwz
+[  502s]    dh_installdocs -O--buildsystem=makefile -O--builddirectory=build
+[  503s]    dh_installchangelogs -O--buildsystem=makefile -O--builddirectory=build
+[  504s]    dh_installman -O--buildsystem=makefile -O--builddirectory=build
+[  505s]    dh_installsystemduser -O--buildsystem=makefile -O--builddirectory=build
+[  505s]    dh_perl -O--buildsystem=makefile -O--builddirectory=build
+[  506s]    dh_link -O--buildsystem=makefile -O--builddirectory=build
+[  507s]    dh_strip_nondeterminism -O--buildsystem=makefile -O--builddirectory=build
+[  508s]    dh_compress -O--buildsystem=makefile -O--builddirectory=build
+[  509s]    dh_fixperms -O--buildsystem=makefile -O--builddirectory=build
+[  511s]    dh_missing -O--buildsystem=makefile -O--builddirectory=build
+[  511s]    dh_dwz -a -O--buildsystem=makefile -O--builddirectory=build
+[  512s] Can't exec "dwz": No such file or directory at /usr/share/perl5/Debian/Debhelper/Dh_Lib.pm line 522.
+[  512s] dh_dwz: error: dwz -- debian/dwz/usr/bin/dwz failed to execute: No child processes
+[  512s] dh_dwz: error: dwz -- debian/dwz/usr/bin/dwz returned exit code 2
+[  512s] dh_dwz: error: Aborting due to earlier error
+[  512s] make: *** [debian/rules:14: binary] Error 25
+
+
+elfutils
+[ 2106s] dh_md5sums -i
+[ 2107s] dh_builddeb -i
+[ 2107s] dpkg-deb: building package 'libdebuginfod-common' in '../libdebuginfod-common_0.185-2_all.deb'.
+[ 2108s] dh_testdir
+[ 2109s] dh_testroot
+[ 2109s] dh_installchangelogs -a ChangeLog
+[ 2110s] dh_installdocs -a ChangeLog
+[ 2111s] : # FIXME: package those ...
+[ 2111s] dh_dwz -a
+[ 2112s] /usr/bin/dwz: error while loading shared libraries: libelf.so.1: cannot open shared object file: No such file or directory
+[ 2112s] dh_dwz: error: dwz -- debian/libasm1/usr/lib/riscv64-linux-gnu/libasm-0.185.so returned exit code 127
+[ 2112s] /usr/bin/dwz: error while loading shared libraries: libelf.so.1: cannot open shared object file: No such file or directory
+[ 2112s] dh_dwz: error: dwz -mdebian/elfutils/usr/lib/debug/.dwz/riscv64-linux-gnu/elfutils.debug -M/usr/lib/debug/.dwz/riscv64-linux-gnu/elfutils.debug -- debian/elfutils/usr/bin/eu-addr2line debian/elfutils/usr/bin/eu-ar debian/elfutils/usr/bin/eu-elfclassify debian/elfutils/usr/bin/eu-elfcmp debian/elfutils/usr/bin/eu-elfcompress debian/elfutils/usr/bin/eu-elflint debian/elfutils/usr/bin/eu-findtextrel debian/elfutils/usr/bin/eu-nm debian/elfutils/usr/bin/eu-objdump debian/elfutils/usr/bin/eu-ranlib debian/elfutils/usr/bin/eu-readelf debian/elfutils/usr/bin/eu-size debian/elfutils/usr/bin/eu-stack debian/elfutils/usr/bin/eu-strings debian/elfutils/usr/bin/eu-strip debian/elfutils/usr/bin/eu-unstrip returned exit code 127
+[ 2112s] dh_dwz: error: Aborting due to earlier error
+[ 2112s] make: *** [debian/rules:156: binary-arch] Error 25
+[ 2112s] dpkg-buildpackage: error: fakeroot debian/rules binary subprocess returned exit status 2
+
+
+groovy
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.loadModule(DefaultModuleRegistry.java:106)
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.getModule(DefaultModuleRegistry.java:86)
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.getModules(DefaultModuleRegistry.java:160)
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.access$100(DefaultModuleRegistry.java:45)
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry$DefaultModule.getRequiredModules(DefaultModuleRegistry.java:296)
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry$DefaultModule.collectRequiredModules(DefaultModuleRegistry.java:321)
+[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry$DefaultModule.getAllRequiredModules(DefaultModuleRegistry.java:313)
+[ 1472s] 	at org.gradle.api.internal.DefaultClassPathProvider.findClassPath(DefaultClassPathProvider.java:32)
+[ 1472s] 	at org.gradle.api.internal.DefaultClassPathRegistry.getClassPath(DefaultClassPathRegistry.java:34)
+[ 1472s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:49)
+[ 1472s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+[ 1472s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+[ 1472s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=groovy -Dfile.encoding=UTF-8 --project-prop finalRelease=true dist -x :grooidjar returned exit code 1
+[ 1472s] make[1]: *** [debian/rules:21: override_dh_auto_build] Error 25
+[ 1472s] make[1]: Leaving directory '/usr/src/packages/BUILD'
+[ 1472s] make: *** [debian/rules:12: build] Error 2
+
+
+jcommander
+[  944s] 	at org.gradle.launcher.Main.doAction(Main.java:33)
+[  944s] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+[  944s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[  944s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[  944s] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[  944s] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[  944s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+[  944s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+[  944s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+[  944s] 
+[  944s] 
+[  944s] * Get more help at https://help.gradle.org
+[  944s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=jcommander -Dfile.encoding=UTF-8 --parallel --max-workers=2 assemble javadoc returned exit code 1
+[  944s] make[1]: *** [debian/rules:11: override_dh_auto_build] Error 25
+[  944s] make[1]: Leaving directory '/usr/src/packages/BUILD'
+[  945s] make: *** [debian/rules:8: build] Error 2
+
+
+kmailtransport
+[ 1243s] [  6%] Building CXX object src/kmailtransport/CMakeFiles/KF5MailTransport.dir/transport.cpp.o
+[ 1243s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport && /usr/bin/c++ -DBUILD_TESTING -DKCOREADDONS_LIB -DKF5MailTransport_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055400 -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libmailtransport5\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport -I/usr/src/packages/BUILD/src/kmailtransport -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/KF5MailTransport_autogen/include -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -isystem /usr/include/KF5/KWallet -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KCodecs -isystem /usr/include/KF5/KAuth -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/kmailtransport/CMakeFiles/KF5MailTransport.dir/transport.cpp.o -MF CMakeFiles/KF5MailTransport.dir/transport.cpp.o.d -o CMakeFiles/KF5MailTransport.dir/transport.cpp.o -c /usr/src/packages/BUILD/src/kmailtransport/transport.cpp
+[ 1243s] [  7%] Building CXX object src/kmailtransport/CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o
+[ 1243s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport && /usr/bin/c++ -DBUILD_TESTING -DKCOREADDONS_LIB -DKF5MailTransport_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055400 -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libmailtransport5\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport -I/usr/src/packages/BUILD/src/kmailtransport -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/KF5MailTransport_autogen/include -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -isystem /usr/include/KF5/KWallet -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KCodecs -isystem /usr/include/KF5/KAuth -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/kmailtransport/CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o -MF CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o -c /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/KF5MailTransport_autogen/mocs_compilation.cpp
+[ 1261s] In file included from /usr/include/riscv64-linux-gnu/qt5/QtCore/qglobal.h:105,
+[ 1261s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/qchar.h:43,
+[ 1261s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/QChar:1,
+[ 1261s]                  from /usr/include/KF5/KI18n/klocalizedstring.h:11,
+[ 1261s]                  from /usr/include/KF5/KI18n/KLocalizedString:1,
+[ 1261s]                  from /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/transportbase.h:7,
+[ 1261s]                  from /usr/src/packages/BUILD/src/kmailtransport/transport.h:10,
+[ 1261s]                  from /usr/src/packages/BUILD/src/kmailtransport/transport.cpp:7:
+[ 1261s] /usr/src/packages/BUILD/src/kmailtransport/transport.h:98:12: error: standard attributes in middle of decl-specifiers
+[ 1261s]    98 |     static Q_REQUIRED_RESULT QString authenticationTypeString(int type);
+[ 1261s]       |            ^~~~~~~~~~~~~~~~~
+[ 1261s] /usr/src/packages/BUILD/src/kmailtransport/transport.h:98:12: note: standard attributes must precede the decl-specifiers to apply to the declaration, or follow them to apply to the type
+
+
+libbluray
+[ 1122s]     [javac] warning: [options] source value 6 is obsolete and will be removed in a future release
+[ 1122s]     [javac] warning: [options] target value 1.6 is obsolete and will be removed in a future release
+[ 1122s]     [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[ 1154s]     [javac] Note: /usr/src/packages/BUILD/contrib/asm/src/org/objectweb/asm/Opcodes.java uses or overrides a deprecated API.
+[ 1154s]     [javac] Note: Recompile with -Xlint:deprecation for details.
+[ 1154s]     [javac] 4 warnings
+[ 1154s]     [javac] /usr/src/packages/BUILD/src/libbluray/bdj/build.xml:32: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+[ 1156s]     [javac] Compiling 690 source files to /usr/src/packages/BUILD/src/libbluray/bdj/build
+[ 1157s]     [javac] warning: [options] bootstrap class path not set in conjunction with -source 6
+[ 1157s]     [javac] warning: [options] source value 6 is obsolete and will be removed in a future release
+[ 1157s]     [javac] warning: [options] target value 1.6 is obsolete and will be removed in a future release
+[ 1157s]     [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[ 1206s]     [javac] /usr/src/packages/BUILD/src/libbluray/bdj/java-j2se/java/io/BDFileSystemImpl.java:21: error: BDFileSystemImpl is not abstract and does not override abstract method isInvalid(File) in FileSystem
+[ 1206s]     [javac] class BDFileSystemImpl extends BDFileSystem {
+[ 1206s]     [javac] ^
+[ 1206s]     [javac] Note: Some input files use or override a deprecated API.
+
+
+maven
+[  866s] dpkg-source: info: building maven in maven_3.6.3-5.debian.tar.xz
+[  867s] dpkg-source: info: building maven in maven_3.6.3-5.dsc
+[  867s]  debian/rules build
+[  867s] dh build
+[  867s]    dh_update_autotools_config
+[  868s]    dh_autoreconf
+[  869s]    dh_auto_configure
+[  993s] 	mh_patchpoms -plibmaven3-core-java --debian-build --keep-pom-version --maven-repo=/usr/src/packages/BUILD/debian/maven-repo
+[ 1013s]    dh_auto_build
+[ 1014s] 	/usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package -DskipTests -Dnotimestamp=true -Dlocale=en_US
+[ 1016s] Error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher
+[ 1016s] Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.classworlds.launcher.Launcher
+[ 1016s] dh_auto_build: error: /usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package -DskipTests -Dnotimestamp=true -Dlocale=en_US returned exit code 1
+[ 1016s] make: *** [debian/rules:4: build] Error 25
+[ 1016s] dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2
+[ 1018s] 
+
+
+mingw-w64
+[11061s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-sched.lo -MD -MP -MF src/.deps/libwinpthread_la-sched.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/sched.c -o src/libwinpthread_la-sched.o >/dev/null 2>&1
+[11072s] mv -f src/.deps/libwinpthread_la-sched.Tpo src/.deps/libwinpthread_la-sched.Plo
+[11072s] /bin/bash ./libtool  --tag=CC   --mode=compile i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads  -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-clock.lo -MD -MP -MF src/.deps/libwinpthread_la-clock.Tpo -c -o src/libwinpthread_la-clock.lo `test -f 'src/clock.c' || echo '/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/'`src/clock.c
+[11073s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-clock.lo -MD -MP -MF src/.deps/libwinpthread_la-clock.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/clock.c  -DDLL_EXPORT -DPIC -o src/.libs/libwinpthread_la-clock.o
+[11083s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-clock.lo -MD -MP -MF src/.deps/libwinpthread_la-clock.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/clock.c -o src/libwinpthread_la-clock.o >/dev/null 2>&1
+[11093s] mv -f src/.deps/libwinpthread_la-clock.Tpo src/.deps/libwinpthread_la-clock.Plo
+[11093s] /bin/bash ./libtool  --tag=CC   --mode=compile i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads  -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-nanosleep.lo -MD -MP -MF src/.deps/libwinpthread_la-nanosleep.Tpo -c -o src/libwinpthread_la-nanosleep.lo `test -f 'src/nanosleep.c' || echo '/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/'`src/nanosleep.c
+[11094s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-nanosleep.lo -MD -MP -MF src/.deps/libwinpthread_la-nanosleep.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/nanosleep.c  -DDLL_EXPORT -DPIC -o src/.libs/libwinpthread_la-nanosleep.o
+[11103s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-nanosleep.lo -MD -MP -MF src/.deps/libwinpthread_la-nanosleep.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/nanosleep.c -o src/libwinpthread_la-nanosleep.o >/dev/null 2>&1
+[11112s] mv -f src/.deps/libwinpthread_la-nanosleep.Tpo src/.deps/libwinpthread_la-nanosleep.Plo
+[11112s] /bin/bash ./libtool   --tag=RC --mode=compile i686-w64-mingw32-windres  -i /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/version.rc -o src/version.lo
+[11113s] libtool: compile:  i686-w64-mingw32-windres -i /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/version.rc  -o src/.libs/version.o
+[11115s] /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/version.rc:23:10: fatal error: winver.h: No such file or directory
+[11115s]    23 | #include <winver.h>
+[11115s]       |          ^~~~~~~~~~
+[11115s] compilation terminated.
+
+
+openbabel
+[ 3952s] /usr/bin/make  -f src/formats/CMakeFiles/MNAformat.dir/build.make src/formats/CMakeFiles/MNAformat.dir/depend
+[ 3952s] make[4]: Entering directory '/usr/src/packages/BUILD/builddir'
+[ 3952s] cd /usr/src/packages/BUILD/builddir && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /usr/src/packages/BUILD /usr/src/packages/BUILD/src/formats /usr/src/packages/BUILD/builddir /usr/src/packages/BUILD/builddir/src/formats /usr/src/packages/BUILD/builddir/src/formats/CMakeFiles/MNAformat.dir/DependInfo.cmake --color=
+[ 3952s] make[4]: Leaving directory '/usr/src/packages/BUILD/builddir'
+[ 3952s] /usr/bin/make  -f src/formats/CMakeFiles/MNAformat.dir/build.make src/formats/CMakeFiles/MNAformat.dir/build
+[ 3952s] make[4]: Entering directory '/usr/src/packages/BUILD/builddir'
+[ 3953s] [ 34%] Building CXX object src/formats/CMakeFiles/MNAformat.dir/MNAformat.cpp.o
+[ 3953s] cd /usr/src/packages/BUILD/builddir/src/formats && /usr/bin/c++ -DBUILD_LINK_AS_DLL -DHAVE_EIGEN -DHAVE_EIGEN3 -DHAVE_LIBZ -DHAVE_RADPIJSON -DHAVE_SHARED_POINTER -DHAVE_WXWIDGETS -DMNAformat_EXPORTS -DUSING_DYNAMIC_LIBS -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/usr/src/packages/BUILD/builddir/include -I/usr/src/packages/BUILD/data -I/usr/src/packages/BUILD/include -I/usr/include/eigen3 -I/usr/include/cairo -I/usr/include/libxml2 -isystem /usr/lib/riscv64-linux-gnu/wx/include/gtk3-unicode-3.0 -isystem /usr/include/wx-3.0 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -std=gnu++98 -Wdate-time -D_FORTIFY_SOURCE=2 -Wdate-time -D_FORTIFY_SOURCE=2 -pthread -fopenmp -fPIC -std=gnu++11 -MD -MT src/formats/CMakeFiles/MNAformat.dir/MNAformat.cpp.o -MF CMakeFiles/MNAformat.dir/MNAformat.cpp.o.d -o CMakeFiles/MNAformat.dir/MNAformat.cpp.o -c /usr/src/packages/BUILD/src/formats/MNAformat.cpp
+[ 3953s] [ 35%] Building CXX object src/formats/CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o
+[ 3953s] cd /usr/src/packages/BUILD/builddir/src/formats && /usr/bin/c++ -DBUILD_LINK_AS_DLL -DHAVE_EIGEN -DHAVE_EIGEN3 -DHAVE_LIBZ -DHAVE_RADPIJSON -DHAVE_SHARED_POINTER -DHAVE_WXWIDGETS -DUSING_DYNAMIC_LIBS -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -Dasciiformat_EXPORTS -I/usr/src/packages/BUILD/builddir/include -I/usr/src/packages/BUILD/data -I/usr/src/packages/BUILD/include -I/usr/include/eigen3 -I/usr/include/cairo -I/usr/include/libxml2 -isystem /usr/lib/riscv64-linux-gnu/wx/include/gtk3-unicode-3.0 -isystem /usr/include/wx-3.0 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -std=gnu++98 -Wdate-time -D_FORTIFY_SOURCE=2 -Wdate-time -D_FORTIFY_SOURCE=2 -pthread -fopenmp -fPIC -std=gnu++11 -MD -MT src/formats/CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o -MF CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o.d -o CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o -c /usr/src/packages/BUILD/src/depict/asciipainter.cpp
+[ 3957s] In file included from /usr/src/packages/BUILD/src/depict/asciipainter.cpp:18:
+[ 3957s] /usr/src/packages/BUILD/include/openbabel/obutil.h: In member function 'void OpenBabel::OBStopwatch::Start()':
+[ 3957s] /usr/src/packages/BUILD/include/openbabel/obutil.h:65:14: error: 'clock' was not declared in this scope
+[ 3957s]    65 |       start= clock();
+[ 3957s]       |              ^~~~~
+[ 3957s] /usr/src/packages/BUILD/include/openbabel/obutil.h:40:1: note: 'clock' is defined in header '<ctime>'; did you forget to '#include <ctime>'?
+
+
+petsc
+[ 2137s] TESTING: consistencyChecks from config.packages.f2cblaslapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:1004)
+[ 2137s] TESTING: alternateConfigureLibrary from config.packages.f2cblaslapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:1000)
+[ 2137s] TESTING: consistencyChecks from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:1004)
+[ 2137s] TESTING: checkDependencies from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:905)
+[ 2137s] TESTING: configureLibrary from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/packages/BlasLapack.py:485)
+[ 2154s] TESTING: checkLib from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/packages/BlasLapack.py:109)
+[ 2154s] *******************************************************************************
+[ 2154s]          UNABLE to CONFIGURE with GIVEN OPTIONS    (see configure.log for details):
+[ 2154s] -------------------------------------------------------------------------------
+[ 2154s] You set a value for --with-blas-lib=<lib> and --with-lapack-lib=<lib>, but ['-lblas'] and ['-llapack'] cannot be used
+[ 2154s] *******************************************************************************
+[ 2154s] 
+[ 2155s] dh_auto_configure: error: ./configure --build=riscv64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir=\${prefix}/lib/riscv64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking --with-debugging=1 --shared-library-extension=_real --with-shared-libraries --with-pic=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpif90 --with-cxx-dialect=C\+\+11 --with-opencl=1 --with-blas-lib=-lblas --with-lapack-lib=-llapack --with-scalapack=1 --with-scalapack-lib=-lscalapack-openmpi --with-ptscotch=1 --with-ptscotch-include=/usr/include/scotch "--with-ptscotch-lib=-lptesmumps -lptscotch -lptscotcherr" --with-fftw=1 --with-fftw-include=\[\] "--with-fftw-lib=-lfftw3 -lfftw3_mpi" --with-yaml=1 --with-valgrind=1 --with-hdf5-include=/usr/include/hdf5/openmpi "--with-hdf5-lib=-L/usr/lib/riscv64-linux-gnu/hdf5/openmpi -L/usr/lib/riscv64-linux-gnu/openmpi/lib -lhdf5 -lmpi" --CXX_LINKER_FLAGS=-Wl,--no-as-needed --with-hypre=1 --with-hypre-include=/usr/include/hypre --with-hypre-lib=-lHYPRE --with-mumps=1 --with-mumps-include=\[\] "--with-mumps-lib=-ldmumps -lzmumps -lsmumps -lcmumps -lmumps_common -lpord" --with-suitesparse=1 --with-suitesparse-include=/usr/include/suitesparse "--with-suitesparse-lib=-lspqr -lumfpack -lamd -lcholmod -lklu" --with-superlu=1 --with-superlu-include=/usr/include/superlu --with-superlu-lib=-lsuperlu --with-superlu_dist=1 --with-superlu_dist-include=/usr/include/superlu-dist --with-superlu_dist-lib=-lsuperlu_dist --prefix=/usr/lib/petscdir/petsc3.16/riscv64-linux-gnu-real-debug --PETSC_ARCH=riscv64-linux-gnu-real-debug "CFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC" "CXXFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC" "FCFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -fPIC -ffree-line-length-0" "FFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -fPIC -ffree-line-length-0" "LDFLAGS=-Wl,-z,relro -fPIC" MAKEFLAGS=w returned exit code 1
+[ 2155s] Executing: uname -s
+[ 2155s] stdout: Linux
+[ 2155s] 
+
+
+pkg-config
+[  692s] checking for default search path for .pc files... /usr/local/lib/riscv64-linux-gnu/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/riscv64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+[  692s] checking for system include path to avoid -I flags... /usr/include
+[  692s] checking for system library path to avoid -L flags... /lib:/lib/riscv64-linux-gnu:/usr/lib:/usr/lib/riscv64-linux-gnu
+[  692s] configure: creating ./config.lt
+[  702s] config.lt: creating libtool
+[  703s] checking whether to list both direct and indirect dependencies... no
+[  703s] checking for Win32... no
+[  703s] checking if prefix should be redefined at runtime... no
+[  703s] checking if internal glib should be used... no
+[  703s] checking for riscv64-linux-gnu-pkg-config... no
+[  703s] checking for pkg-config... no
+[  703s] checking for glib-2.0 >= 2.16... no
+[  703s] configure: error: Either a previously installed pkg-config or "glib-2.0 >= 2.16" could not be found. Please set GLIB_CFLAGS and GLIB_LIBS to the correct values or pass --with-internal-glib to configure to use the bundled copy.
+[  704s] make[1]: *** [debian/rules:25: override_dh_auto_configure] Error 1
+[  704s] make[1]: Leaving directory '/usr/src/packages/BUILD'
+[  704s] make: *** [debian/rules:22: binary] Error 2
+
+
+plexus-classworlds
+[  833s] dpkg-source: info: building plexus-classworlds in plexus-classworlds_2.6.0-1.debian.tar.xz
+[  834s] dpkg-source: info: building plexus-classworlds in plexus-classworlds_2.6.0-1.dsc
+[  834s]  debian/rules build
+[  834s] dh build
+[  835s]    dh_update_autotools_config
+[  835s]    dh_autoreconf
+[  836s]    dh_auto_configure
+[  958s] 	mh_patchpoms -plibplexus-classworlds-java --debian-build --keep-pom-version --maven-repo=/usr/src/packages/BUILD/debian/maven-repo
+[  967s]    dh_auto_build
+[  968s] 	/usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package javadoc:jar javadoc:aggregate -DskipTests -Dnotimestamp=true -Dlocale=en_US
+[  971s] Error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher
+[  971s] Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.classworlds.launcher.Launcher
+[  971s] dh_auto_build: error: /usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package javadoc:jar javadoc:aggregate -DskipTests -Dnotimestamp=true -Dlocale=en_US returned exit code 1
+[  971s] make: *** [debian/rules:4: build] Error 25
+[  971s] dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2
+[  972s] 
+
+
+rustc
+[ 1291s] touch "debian/dh_auto_configure.stamp"
+[ 1291s] sed -i -e 's/^docs = false/docs = true/' debian/config.toml
+[ 1292s] make[2]: Leaving directory '/usr/src/packages/BUILD'
+[ 1292s]    debian/rules override_dh_auto_build-arch
+[ 1292s] make[2]: Entering directory '/usr/src/packages/BUILD'
+[ 1293s] /usr/bin/rustc: error while loading shared libraries: librustc_driver-29e70c4625ab372c.so: cannot open shared object file: No such file or directory
+[ 1293s] RUST_BACKTRACE=1 python3 src/bootstrap/bootstrap.py -j 2 build --stage 2 --config debian/config.toml --on-fail env
+[ 1298s] /usr/src/packages/BUILD/src/bootstrap/bootstrap.py:5: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+[ 1298s]   import distutils.version
+[ 1299s] Building rustbuild
+[ 1299s] running: /usr/bin/cargo build --manifest-path /usr/src/packages/BUILD/src/bootstrap/Cargo.toml --verbose --verbose
+[ 1299s] warning: /usr/src/packages/BUILD/Cargo.toml: unused manifest key: profile.dev.package.cargo-util.path
+[ 1299s] error: process didn't exit successfully: `/usr/bin/rustc -vV` (exit status: 127)
+[ 1299s] --- stderr
+[ 1299s] /usr/bin/rustc: error while loading shared libraries: librustc_driver-29e70c4625ab372c.so: cannot open shared object file: No such file or directory
+[ 1299s] 
+
+
+texlive-extra
+[  579s] Processing triggers for man-db (2.9.4-2) ...
+[  580s] [268/271] installing g++-12-12.2.0-9+deepin+0u1
+[  585s] [269/271] installing g++-4:12.2.0-1
+[  586s] update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+[  586s] [270/271] installing debhelper-13.5.2
+[  587s] Processing triggers for man-db (2.9.4-2) ...
+[  594s] [271/271] installing build-essential-12.9
+[  595s] configuring all installed packages...
+[  596s] now finalizing build dir...
+[  596s] SIOCSIFADDR: Permission denied
+[  597s] Running build time source services...
+[  599s] dpkg-source: warning: extracting unsigned source package (/usr/src/packages/SOURCES/texlive-extra_2021.20210921-1.dsc)
+[  599s] dpkg-source: error: cannot fstat file /usr/src/packages/SOURCES/texlive-extra_2021.20210921.orig-tex4ht.tar.xz: No such file or directory
+[  599s] -----------------------------------------------------------------
+[  599s] ----- building texlive-extra_2021.20210921-1.dsc (user abuild)
+[  599s] -----------------------------------------------------------------
+
+
+
+
+18
+
+
