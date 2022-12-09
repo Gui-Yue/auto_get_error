@@ -1,158 +1,80 @@
-asm
-[  806s] java.lang.IllegalArgumentException: Cannot find JAR 'asm-all.jar' required by module 'gradle-launcher' using classpath or distribution directory '/usr/share/gradle'
-[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.findDependencyJar(DefaultModuleRegistry.java:262)
-[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.findDependencyJars(DefaultModuleRegistry.java:152)
-[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.module(DefaultModuleRegistry.java:142)
-[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.loadOptionalModule(DefaultModuleRegistry.java:122)
-[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.loadModule(DefaultModuleRegistry.java:106)
-[  806s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.getModule(DefaultModuleRegistry.java:86)
-[  806s] 	at org.gradle.api.internal.DefaultClassPathProvider.findClassPath(DefaultClassPathProvider.java:32)
-[  806s] 	at org.gradle.api.internal.DefaultClassPathRegistry.getClassPath(DefaultClassPathRegistry.java:34)
-[  806s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:49)
-[  806s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
-[  806s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
-[  806s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=asm -Dfile.encoding=UTF-8 --parallel --max-workers=2 jar javadoc -x :asm-test:compileJava -x :asm-test:javadoc returned exit code 1
-[  806s] make[1]: Leaving directory '/usr/src/packages/BUILD'
-[  806s] make[1]: *** [debian/rules:16: override_dh_auto_build] Error 25
-[  806s] make: *** [debian/rules:6: build] Error 2
+aptitude
+[ 1776s] make[6]: Nothing to be done for 'all'.
+[ 1776s] make[6]: Leaving directory '/usr/src/packages/BUILD/build/src/generic/util/mocks'
+[ 1776s] make[6]: Entering directory '/usr/src/packages/BUILD/build/src/generic/util'
+[ 1776s] g++ -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I../../../../src/generic/util -I../../..  -I../../.. -I../../../../src/generic/util -I../../../.. -I../../../../src -I/usr/include -Wdate-time -D_FORTIFY_SOURCE=2 -DHELPDIR=\"/usr/share/aptitude\" -DPKGDATADIR=\"/usr/share/aptitude\"  -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include -I/usr/include/cwidget -I/usr/lib/riscv64-linux-gnu/cwidget -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include    -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security  -D_REENTRANT -std=gnu++17 -Wall  -c -o file_cache.o ../../../../src/generic/util/file_cache.cc
+[ 1776s] g++ -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I../../../../src/generic/util -I../../..  -I../../.. -I../../../../src/generic/util -I../../../.. -I../../../../src -I/usr/include -Wdate-time -D_FORTIFY_SOURCE=2 -DHELPDIR=\"/usr/share/aptitude\" -DPKGDATADIR=\"/usr/share/aptitude\"  -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include -I/usr/include/cwidget -I/usr/lib/riscv64-linux-gnu/cwidget -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include    -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security  -D_REENTRANT -std=gnu++17 -Wall  -c -o logging.o ../../../../src/generic/util/logging.cc
+[ 1821s] g++ -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I../../../../src/generic/util -I../../..  -I../../.. -I../../../../src/generic/util -I../../../.. -I../../../../src -I/usr/include -Wdate-time -D_FORTIFY_SOURCE=2 -DHELPDIR=\"/usr/share/aptitude\" -DPKGDATADIR=\"/usr/share/aptitude\"  -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include -I/usr/include/cwidget -I/usr/lib/riscv64-linux-gnu/cwidget -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include    -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security  -D_REENTRANT -std=gnu++17 -Wall  -c -o progress_info.o ../../../../src/generic/util/progress_info.cc
+[ 1833s] g++ -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I../../../../src/generic/util -I../../..  -I../../.. -I../../../../src/generic/util -I../../../.. -I../../../../src -I/usr/include -Wdate-time -D_FORTIFY_SOURCE=2 -DHELPDIR=\"/usr/share/aptitude\" -DPKGDATADIR=\"/usr/share/aptitude\"  -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include -I/usr/include/cwidget -I/usr/lib/riscv64-linux-gnu/cwidget -I/usr/include/sigc++-2.0 -I/usr/lib/riscv64-linux-gnu/sigc++-2.0/include    -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security  -D_REENTRANT -std=gnu++17 -Wall  -c -o refcounted_base.o ../../../../src/generic/util/refcounted_base.cc
+[ 1838s] In file included from ../../../../src/generic/util/refcounted_base.h:25,
+[ 1838s]                  from ../../../../src/generic/util/refcounted_base.cc:20:
+[ 1838s] /usr/include/cwidget/generic/threads/threads.h: In constructor 'cwidget::threads::thread::attr::attr()':
+[ 1838s] /usr/include/cwidget/generic/threads/threads.h:139:11: error: 'pthread_attr_init' was not declared in this scope; did you mean 'pthread_attr_t'?
+[ 1838s]   139 |           pthread_attr_init(&attrs);
+[ 1838s]       |           ^~~~~~~~~~~~~~~~~
+[ 1838s]       |           pthread_attr_t
+[ 1838s] /usr/include/cwidget/generic/threads/threads.h: In destructor 'cwidget::threads::thread::attr::~attr()':
+[ 1838s] /usr/include/cwidget/generic/threads/threads.h:144:11: error: 'pthread_attr_destroy' was not declared in this scope; did you mean 'pthread_attr_t'?
 
 
-bnd
-[ 1359s] 	at org.gradle.launcher.Main.doAction(Main.java:33)
-[ 1359s] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
-[ 1359s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[ 1359s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-[ 1359s] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-[ 1359s] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-[ 1359s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
-[ 1359s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
-[ 1359s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
-[ 1359s] 
-[ 1359s] 
-[ 1359s] * Get more help at https://help.gradle.org
-[ 1359s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=bnd -Dfile.encoding=UTF-8 :biz.aQute.bnd:assemble :biz.aQute.launcher:assemble :biz.aQute.junit:assemble :biz.aQute.bnd.gradle:assemble -x :biz.aQute.tester:compileJava -x :biz.aQute.tester.junit-platform:compileJava -x :demo:compileJava -x :demo:jar -x :cnf:jar returned exit code 1
-[ 1359s] make[1]: *** [debian/rules:50: override_dh_auto_build] Error 25
-[ 1359s] make[1]: Leaving directory '/usr/src/packages/BUILD'
-[ 1359s] make: *** [debian/rules:10: build] Error 2
+cyrus-sasl2
+[  950s] make[2]: Leaving directory '/usr/src/packages/BUILD/build-heimdal'
+[  950s] this is the am__doit target
+[  950s] configure:5088: $? = 0
+[  950s] configure:5107: result: yes (GNU style)
+[  950s] configure:5133: checking dependency style of riscv64-linux-gnu-gcc
+[  950s] configure:5245: result: none
+[  950s] configure:5265: checking how to run the C preprocessor
+[  950s] configure:5291: riscv64-linux-gnu-gcc -E -Wdate-time -D_FORTIFY_SOURCE=2 -I/usr/include/heimdal conftest.c
+[  950s] configure:5291: $? = 0
+[  950s] configure:5306: riscv64-linux-gnu-gcc -E -Wdate-time -D_FORTIFY_SOURCE=2 -I/usr/include/heimdal conftest.c
+[  950s] conftest.c:11:10: fatal error: ac_nonexistent.h: No such file or directory
+[  950s]    11 | #include <ac_nonexistent.h>
+[  950s]       |          ^~~~~~~~~~~~~~~~~~
+[  950s] compilation terminated.
+[  950s] configure:5306: $? = 1
+[  950s] configure: failed program was:
 
 
-ceph
-[ 2551s]                  from /usr/src/packages/BUILD/src/osd/osd_types.h:46:
-[ 2551s] /usr/src/packages/BUILD/src/include/rados/librados.hpp:105:54: warning: 'template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator' is deprecated [-Wdeprecated-declarations]
-[ 2551s]   105 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
-[ 2551s]       |                                                      ^~~~~~~~
-[ 2551s] /usr/include/c++/12/bits/stl_iterator_base_types.h:127:34: note: declared here
-[ 2551s]   127 |     struct _GLIBCXX17_DEPRECATED iterator
-[ 2551s]       |                                  ^~~~~~~~
-[ 2557s] In file included from /usr/src/packages/BUILD/src/include/Context.h:19,
-[ 2557s]                  from /usr/src/packages/BUILD/src/msg/Message.h:24,
-[ 2557s]                  from /usr/src/packages/BUILD/src/messages/MMonGetMap.h:18,
-[ 2557s]                  from /usr/src/packages/BUILD/src/mon/MonClient.cc:22:
-[ 2557s] /usr/src/packages/BUILD/src/osd/osd_types.h: In lambda function:
-[ 2557s] /usr/src/packages/BUILD/src/common/dout.h:179:56: error: call to non-'constexpr' function 'ceph::dout::dynamic_marker_t<T> ceph::dout::need_dynamic(T&&) [with T = unsigned int]'
-[ 2557s]   179 |     dout_impl(pdpp->get_cct(), ceph::dout::need_dynamic(pdpp->get_subsys()), v) \
-[ 2557s]       |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
-[ 2557s] /usr/src/packages/BUILD/src/common/dout.h:155:58: note: in definition of macro 'dout_impl'
+icmake
+[ 1724s]     cd ./opcode
+[ 1724s]     g++ -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security --std=c++2a -Wall -D_FORTIFY_SOURCE=2 -x c++-header ./opcode.ih
+[ 1726s]     g++ -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security --std=c++2a -Wall -D_FORTIFY_SOURCE=2 -o../10data.o -c data.cc
+[ 1727s]     cd ..
+[ 1727s]     cd ./tokens
+[ 1727s]     cd ..
+[ 1727s]     cd ./stringstore
+[ 1727s]     g++ -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security --std=c++2a -Wall -D_FORTIFY_SOURCE=2 -x c++-header ./stringstore.ih
+[ 1744s]     g++ -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security --std=c++2a -Wall -D_FORTIFY_SOURCE=2 -o../11offset.o -c offset.cc
+[ 1754s] offset.cc: In member function 'unsigned int StringStore::offset(const std::string&)':
+[ 1754s] offset.cc:7:21: error: 'find_if' was not declared in this scope
+[ 1754s]     7 |         auto iter = find_if(d_string.begin(), d_string.end(),
+[ 1754s]       |                     ^~~~~~~
+[ 1755s] make[1]: *** [debian/rules:28: override_dh_auto_build] Error 1
+[ 1755s] make[1]: Leaving directory '/usr/src/packages/BUILD'
+[ 1755s] make: *** [debian/rules:19: binary] Error 2
 
 
-dpkg
-[   50s] [43/199] installing libpcre2-16-0-10.39-2
-[   51s] Processing triggers for libc-bin (2.36-5) ...
-[   51s] [44/199] installing libpcre2-32-0-10.39-2
-[   51s] Processing triggers for libc-bin (2.36-5) ...
-[   51s] [45/199] installing libpcre2-8-0-10.39-2
-[   51s] Processing triggers for libc-bin (2.36-5) ...
-[   51s] [46/199] installing libpcre3-2:8.39-13
-[   52s] Processing triggers for libc-bin (2.36-5) ...
-[   52s] [47/199] installing libpipeline1-1.5.4-1
-[   52s] dpkg-deb (subprocess): ZSTD_decompressStream error : Unknown frame descriptor 
-[   52s] /bin/tar: This does not look like a tar archive
-[   52s] /bin/tar: Exiting with failure status due to previous errors
-[   52s] dpkg-deb: error: tar subprocess returned error exit status 2
-[   52s] dpkg: error processing archive .init_b_cache/libpipeline1.deb (--install):
-[   52s]  dpkg-deb --control subprocess returned error exit status 2
-[   52s] Errors were encountered while processing:
-
-
-dwz
-[  502s]    dh_installdocs -O--buildsystem=makefile -O--builddirectory=build
-[  503s]    dh_installchangelogs -O--buildsystem=makefile -O--builddirectory=build
-[  504s]    dh_installman -O--buildsystem=makefile -O--builddirectory=build
-[  505s]    dh_installsystemduser -O--buildsystem=makefile -O--builddirectory=build
-[  505s]    dh_perl -O--buildsystem=makefile -O--builddirectory=build
-[  506s]    dh_link -O--buildsystem=makefile -O--builddirectory=build
-[  507s]    dh_strip_nondeterminism -O--buildsystem=makefile -O--builddirectory=build
-[  508s]    dh_compress -O--buildsystem=makefile -O--builddirectory=build
-[  509s]    dh_fixperms -O--buildsystem=makefile -O--builddirectory=build
-[  511s]    dh_missing -O--buildsystem=makefile -O--builddirectory=build
-[  511s]    dh_dwz -a -O--buildsystem=makefile -O--builddirectory=build
-[  512s] Can't exec "dwz": No such file or directory at /usr/share/perl5/Debian/Debhelper/Dh_Lib.pm line 522.
-[  512s] dh_dwz: error: dwz -- debian/dwz/usr/bin/dwz failed to execute: No child processes
-[  512s] dh_dwz: error: dwz -- debian/dwz/usr/bin/dwz returned exit code 2
-[  512s] dh_dwz: error: Aborting due to earlier error
-[  512s] make: *** [debian/rules:14: binary] Error 25
-
-
-elfutils
-[ 2106s] dh_md5sums -i
-[ 2107s] dh_builddeb -i
-[ 2107s] dpkg-deb: building package 'libdebuginfod-common' in '../libdebuginfod-common_0.185-2_all.deb'.
-[ 2108s] dh_testdir
-[ 2109s] dh_testroot
-[ 2109s] dh_installchangelogs -a ChangeLog
-[ 2110s] dh_installdocs -a ChangeLog
-[ 2111s] : # FIXME: package those ...
-[ 2111s] dh_dwz -a
-[ 2112s] /usr/bin/dwz: error while loading shared libraries: libelf.so.1: cannot open shared object file: No such file or directory
-[ 2112s] dh_dwz: error: dwz -- debian/libasm1/usr/lib/riscv64-linux-gnu/libasm-0.185.so returned exit code 127
-[ 2112s] /usr/bin/dwz: error while loading shared libraries: libelf.so.1: cannot open shared object file: No such file or directory
-[ 2112s] dh_dwz: error: dwz -mdebian/elfutils/usr/lib/debug/.dwz/riscv64-linux-gnu/elfutils.debug -M/usr/lib/debug/.dwz/riscv64-linux-gnu/elfutils.debug -- debian/elfutils/usr/bin/eu-addr2line debian/elfutils/usr/bin/eu-ar debian/elfutils/usr/bin/eu-elfclassify debian/elfutils/usr/bin/eu-elfcmp debian/elfutils/usr/bin/eu-elfcompress debian/elfutils/usr/bin/eu-elflint debian/elfutils/usr/bin/eu-findtextrel debian/elfutils/usr/bin/eu-nm debian/elfutils/usr/bin/eu-objdump debian/elfutils/usr/bin/eu-ranlib debian/elfutils/usr/bin/eu-readelf debian/elfutils/usr/bin/eu-size debian/elfutils/usr/bin/eu-stack debian/elfutils/usr/bin/eu-strings debian/elfutils/usr/bin/eu-strip debian/elfutils/usr/bin/eu-unstrip returned exit code 127
-[ 2112s] dh_dwz: error: Aborting due to earlier error
-[ 2112s] make: *** [debian/rules:156: binary-arch] Error 25
-[ 2112s] dpkg-buildpackage: error: fakeroot debian/rules binary subprocess returned exit status 2
-
-
-groovy
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.loadModule(DefaultModuleRegistry.java:106)
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.getModule(DefaultModuleRegistry.java:86)
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.getModules(DefaultModuleRegistry.java:160)
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry.access$100(DefaultModuleRegistry.java:45)
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry$DefaultModule.getRequiredModules(DefaultModuleRegistry.java:296)
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry$DefaultModule.collectRequiredModules(DefaultModuleRegistry.java:321)
-[ 1472s] 	at org.gradle.api.internal.classpath.DefaultModuleRegistry$DefaultModule.getAllRequiredModules(DefaultModuleRegistry.java:313)
-[ 1472s] 	at org.gradle.api.internal.DefaultClassPathProvider.findClassPath(DefaultClassPathProvider.java:32)
-[ 1472s] 	at org.gradle.api.internal.DefaultClassPathRegistry.getClassPath(DefaultClassPathRegistry.java:34)
-[ 1472s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:49)
-[ 1472s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
-[ 1472s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
-[ 1472s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=groovy -Dfile.encoding=UTF-8 --project-prop finalRelease=true dist -x :grooidjar returned exit code 1
-[ 1472s] make[1]: *** [debian/rules:21: override_dh_auto_build] Error 25
-[ 1472s] make[1]: Leaving directory '/usr/src/packages/BUILD'
-[ 1472s] make: *** [debian/rules:12: build] Error 2
-
-
-jcommander
-[  944s] 	at org.gradle.launcher.Main.doAction(Main.java:33)
-[  944s] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
-[  944s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[  944s] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-[  944s] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-[  944s] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-[  944s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
-[  944s] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
-[  944s] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
-[  944s] 
-[  944s] 
-[  944s] * Get more help at https://help.gradle.org
-[  944s] dh_auto_build: error: gradle --info --console plain --offline --stacktrace --no-daemon --refresh-dependencies --gradle-user-home .gradle -Duser.home=. -Duser.name=debian -Ddebian.package=jcommander -Dfile.encoding=UTF-8 --parallel --max-workers=2 assemble javadoc returned exit code 1
-[  944s] make[1]: *** [debian/rules:11: override_dh_auto_build] Error 25
-[  944s] make[1]: Leaving directory '/usr/src/packages/BUILD'
-[  945s] make: *** [debian/rules:8: build] Error 2
+kidentitymanagement
+[ 1585s] [ 43%] Building CXX object src/CMakeFiles/KF5IdentityManagement.dir/identitymanager.cpp.o
+[ 1585s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src && /usr/bin/c++ -DKCOREADDONS_LIB -DKF5IdentityManagement_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055000 -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libkpimidentities5\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/KF5IdentityManagement_autogen/include -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/KPIMTextEdit -isystem /usr/include/KF5/KCodecs -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/KF5/KXmlGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/KF5/KAuth -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/KF5/KIOWidgets -isystem /usr/include/KF5/KIOGui -isystem /usr/include/KF5/KIOCore -isystem /usr/include/KF5/KService -isystem /usr/include/riscv64-linux-gnu/qt5/QtConcurrent -isystem /usr/include/KF5/KWindowSystem -isystem /usr/include/KF5/KJobWidgets -isystem /usr/include/KF5/Solid -isystem /usr/include/KF5/KCompletion -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/CMakeFiles/KF5IdentityManagement.dir/identitymanager.cpp.o -MF CMakeFiles/KF5IdentityManagement.dir/identitymanager.cpp.o.d -o CMakeFiles/KF5IdentityManagement.dir/identitymanager.cpp.o -c /usr/src/packages/BUILD/src/identitymanager.cpp
+[ 1587s] [ 47%] Building CXX object src/CMakeFiles/KF5IdentityManagement.dir/signature.cpp.o
+[ 1587s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src && /usr/bin/c++ -DKCOREADDONS_LIB -DKF5IdentityManagement_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055000 -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libkpimidentities5\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/KF5IdentityManagement_autogen/include -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/KPIMTextEdit -isystem /usr/include/KF5/KCodecs -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/KF5/KXmlGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/KF5/KAuth -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/KF5/KIOWidgets -isystem /usr/include/KF5/KIOGui -isystem /usr/include/KF5/KIOCore -isystem /usr/include/KF5/KService -isystem /usr/include/riscv64-linux-gnu/qt5/QtConcurrent -isystem /usr/include/KF5/KWindowSystem -isystem /usr/include/KF5/KJobWidgets -isystem /usr/include/KF5/Solid -isystem /usr/include/KF5/KCompletion -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/CMakeFiles/KF5IdentityManagement.dir/signature.cpp.o -MF CMakeFiles/KF5IdentityManagement.dir/signature.cpp.o.d -o CMakeFiles/KF5IdentityManagement.dir/signature.cpp.o -c /usr/src/packages/BUILD/src/signature.cpp
+[ 1614s] In file included from /usr/include/riscv64-linux-gnu/qt5/QtCore/qglobal.h:105,
+[ 1614s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/qchar.h:43,
+[ 1614s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/qhash.h:44,
+[ 1614s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/QHash:1,
+[ 1614s]                  from /usr/src/packages/BUILD/src/signature.h:14,
+[ 1614s]                  from /usr/src/packages/BUILD/src/signature.cpp:9:
+[ 1614s] /usr/include/KF5/KPIMTextEdit/kpimtextedit/richtextcomposerimages.h:99:12: error: standard attributes in middle of decl-specifiers
+[ 1614s]    99 |     static Q_REQUIRED_RESULT QByteArray imageNamesToContentIds(const QByteArray &htmlBody, const ImageList &imageList);
+[ 1614s]       |            ^~~~~~~~~~~~~~~~~
+[ 1614s] /usr/include/KF5/KPIMTextEdit/kpimtextedit/richtextcomposerimages.h:99:12: note: standard attributes must precede the decl-specifiers to apply to the declaration, or follow them to apply to the type
+[ 1619s] make[3]: *** [src/CMakeFiles/KF5IdentityManagement.dir/build.make:161: src/CMakeFiles/KF5IdentityManagement.dir/signature.cpp.o] Error 1
+[ 1619s] make[3]: *** Waiting for unfinished jobs....
 
 
 kmailtransport
-[ 1243s] [  6%] Building CXX object src/kmailtransport/CMakeFiles/KF5MailTransport.dir/transport.cpp.o
-[ 1243s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport && /usr/bin/c++ -DBUILD_TESTING -DKCOREADDONS_LIB -DKF5MailTransport_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055400 -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libmailtransport5\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport -I/usr/src/packages/BUILD/src/kmailtransport -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/KF5MailTransport_autogen/include -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -isystem /usr/include/KF5/KWallet -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KCodecs -isystem /usr/include/KF5/KAuth -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/kmailtransport/CMakeFiles/KF5MailTransport.dir/transport.cpp.o -MF CMakeFiles/KF5MailTransport.dir/transport.cpp.o.d -o CMakeFiles/KF5MailTransport.dir/transport.cpp.o -c /usr/src/packages/BUILD/src/kmailtransport/transport.cpp
 [ 1243s] [  7%] Building CXX object src/kmailtransport/CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o
 [ 1243s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport && /usr/bin/c++ -DBUILD_TESTING -DKCOREADDONS_LIB -DKF5MailTransport_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055400 -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libmailtransport5\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport -I/usr/src/packages/BUILD/src/kmailtransport -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/KF5MailTransport_autogen/include -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -isystem /usr/include/KF5/KWallet -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KCodecs -isystem /usr/include/KF5/KAuth -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/kmailtransport/CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o -MF CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/KF5MailTransport.dir/KF5MailTransport_autogen/mocs_compilation.cpp.o -c /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kmailtransport/KF5MailTransport_autogen/mocs_compilation.cpp
 [ 1261s] In file included from /usr/include/riscv64-linux-gnu/qt5/QtCore/qglobal.h:105,
@@ -167,181 +89,241 @@ kmailtransport
 [ 1261s]    98 |     static Q_REQUIRED_RESULT QString authenticationTypeString(int type);
 [ 1261s]       |            ^~~~~~~~~~~~~~~~~
 [ 1261s] /usr/src/packages/BUILD/src/kmailtransport/transport.h:98:12: note: standard attributes must precede the decl-specifiers to apply to the declaration, or follow them to apply to the type
+[ 1261s] In file included from /usr/include/riscv64-linux-gnu/qt5/QtCore/qglobal.h:105,
+[ 1261s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/qnamespace.h:43,
 
 
-libbluray
-[ 1122s]     [javac] warning: [options] source value 6 is obsolete and will be removed in a future release
-[ 1122s]     [javac] warning: [options] target value 1.6 is obsolete and will be removed in a future release
-[ 1122s]     [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-[ 1154s]     [javac] Note: /usr/src/packages/BUILD/contrib/asm/src/org/objectweb/asm/Opcodes.java uses or overrides a deprecated API.
-[ 1154s]     [javac] Note: Recompile with -Xlint:deprecation for details.
-[ 1154s]     [javac] 4 warnings
-[ 1154s]     [javac] /usr/src/packages/BUILD/src/libbluray/bdj/build.xml:32: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-[ 1156s]     [javac] Compiling 690 source files to /usr/src/packages/BUILD/src/libbluray/bdj/build
-[ 1157s]     [javac] warning: [options] bootstrap class path not set in conjunction with -source 6
-[ 1157s]     [javac] warning: [options] source value 6 is obsolete and will be removed in a future release
-[ 1157s]     [javac] warning: [options] target value 1.6 is obsolete and will be removed in a future release
-[ 1157s]     [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-[ 1206s]     [javac] /usr/src/packages/BUILD/src/libbluray/bdj/java-j2se/java/io/BDFileSystemImpl.java:21: error: BDFileSystemImpl is not abstract and does not override abstract method isInvalid(File) in FileSystem
-[ 1206s]     [javac] class BDFileSystemImpl extends BDFileSystem {
-[ 1206s]     [javac] ^
-[ 1206s]     [javac] Note: Some input files use or override a deprecated API.
+kpimtextedit
+[ 1587s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src && /usr/bin/c++ -DBUILD_TESTING -DKCOREADDONS_LIB -DKF5PimTextEdit_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055400 -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_TEXTTOSPEECH_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libkpimtextedit\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/KF5PimTextEdit_autogen/include -isystem /usr/include/KF5/SonnetUi -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/SonnetCore -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/KF5/KIOWidgets -isystem /usr/include/KF5/KIOGui -isystem /usr/include/KF5/KIOCore -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5/KService -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/riscv64-linux-gnu/qt5/QtConcurrent -isystem /usr/include/KF5/KWindowSystem -isystem /usr/include/KF5/KJobWidgets -isystem /usr/include/KF5/Solid -isystem /usr/include/KF5/KCompletion -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KCodecs -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KAuth -isystem /usr/include/KF5/KXmlGui -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KSyntaxHighlighting -isystem /usr/include/riscv64-linux-gnu/qt5/QtTextToSpeech -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/CMakeFiles/KF5PimTextEdit.dir/texteditor/plaintexteditor/plaintexteditfindbar.cpp.o -MF CMakeFiles/KF5PimTextEdit.dir/texteditor/plaintexteditor/plaintexteditfindbar.cpp.o.d -o CMakeFiles/KF5PimTextEdit.dir/texteditor/plaintexteditor/plaintexteditfindbar.cpp.o -c /usr/src/packages/BUILD/src/texteditor/plaintexteditor/plaintexteditfindbar.cpp
+[ 1587s] [  3%] Building CXX object src/CMakeFiles/KF5PimTextEdit.dir/KF5PimTextEdit_autogen/mocs_compilation.cpp.o
+[ 1587s] cd /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src && /usr/bin/c++ -DBUILD_TESTING -DKCOREADDONS_LIB -DKF5PimTextEdit_EXPORTS -DKF_DEPRECATED_WARNINGS_SINCE=0x060000 -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055400 -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_DISABLE_DEPRECATED_BEFORE=0x050f00 -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_STRICT_ITERATORS -DQT_TEXTTOSPEECH_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -DQT_XML_LIB -DTRANSLATION_DOMAIN=\"libkpimtextedit\" -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src -I/usr/src/packages/BUILD/src -I/usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/KF5PimTextEdit_autogen/include -isystem /usr/include/KF5/SonnetUi -isystem /usr/include/KF5 -isystem /usr/include/riscv64-linux-gnu/qt5 -isystem /usr/include/riscv64-linux-gnu/qt5/QtWidgets -isystem /usr/include/riscv64-linux-gnu/qt5/QtGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtCore -isystem /usr/lib/riscv64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/KF5/SonnetCore -isystem /usr/include/KF5/KWidgetsAddons -isystem /usr/include/KF5/KIOWidgets -isystem /usr/include/KF5/KIOGui -isystem /usr/include/KF5/KIOCore -isystem /usr/include/KF5/KCoreAddons -isystem /usr/include/KF5/KService -isystem /usr/include/KF5/KConfigCore -isystem /usr/include/riscv64-linux-gnu/qt5/QtNetwork -isystem /usr/include/riscv64-linux-gnu/qt5/QtDBus -isystem /usr/include/riscv64-linux-gnu/qt5/QtConcurrent -isystem /usr/include/KF5/KWindowSystem -isystem /usr/include/KF5/KJobWidgets -isystem /usr/include/KF5/Solid -isystem /usr/include/KF5/KCompletion -isystem /usr/include/KF5/KConfigWidgets -isystem /usr/include/KF5/KCodecs -isystem /usr/include/KF5/KConfigGui -isystem /usr/include/riscv64-linux-gnu/qt5/QtXml -isystem /usr/include/KF5/KAuth -isystem /usr/include/KF5/KXmlGui -isystem /usr/include/KF5/KI18n -isystem /usr/include/KF5/KSyntaxHighlighting -isystem /usr/include/riscv64-linux-gnu/qt5/QtTextToSpeech -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -pedantic -Wzero-as-null-pointer-constant -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -std=gnu++17 -MD -MT src/CMakeFiles/KF5PimTextEdit.dir/KF5PimTextEdit_autogen/mocs_compilation.cpp.o -MF CMakeFiles/KF5PimTextEdit.dir/KF5PimTextEdit_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/KF5PimTextEdit.dir/KF5PimTextEdit_autogen/mocs_compilation.cpp.o -c /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/KF5PimTextEdit_autogen/mocs_compilation.cpp
+[ 1609s] In file included from /usr/include/riscv64-linux-gnu/qt5/QtCore/qglobal.h:105,
+[ 1609s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/qregularexpression.h:44,
+[ 1609s]                  from /usr/include/riscv64-linux-gnu/qt5/QtCore/QRegularExpression:1,
+[ 1609s]                  from /usr/src/packages/BUILD/src/texteditor/commonwidget/texteditfindbarbase.h:10,
+[ 1609s]                  from /usr/src/packages/BUILD/obj-riscv64-linux-gnu/src/kpimtextedit/texteditfindbarbase.h:1,
+[ 1609s]                  from /usr/src/packages/BUILD/src/texteditor/plaintexteditor/plaintexteditfindbar.h:9,
+[ 1609s]                  from /usr/src/packages/BUILD/src/texteditor/plaintexteditor/plaintexteditfindbar.cpp:7:
+[ 1609s] /usr/src/packages/BUILD/src/texteditor/commonwidget/texteditfindbarbase.h:43:13: error: standard attributes in middle of decl-specifiers
+[ 1609s]    43 |     virtual Q_REQUIRED_RESULT bool viewIsReadOnly() const = 0;
+[ 1609s]       |             ^~~~~~~~~~~~~~~~~
+[ 1609s] /usr/src/packages/BUILD/src/texteditor/commonwidget/texteditfindbarbase.h:43:13: note: standard attributes must precede the decl-specifiers to apply to the declaration, or follow them to apply to the type
+[ 1609s] /usr/src/packages/BUILD/src/texteditor/commonwidget/texteditfindbarbase.h:44:13: error: standard attributes in middle of decl-specifiers
+[ 1609s]    44 |     virtual Q_REQUIRED_RESULT bool documentIsEmpty() const = 0;
 
 
-maven
-[  866s] dpkg-source: info: building maven in maven_3.6.3-5.debian.tar.xz
-[  867s] dpkg-source: info: building maven in maven_3.6.3-5.dsc
-[  867s]  debian/rules build
-[  867s] dh build
-[  867s]    dh_update_autotools_config
-[  868s]    dh_autoreconf
-[  869s]    dh_auto_configure
-[  993s] 	mh_patchpoms -plibmaven3-core-java --debian-build --keep-pom-version --maven-repo=/usr/src/packages/BUILD/debian/maven-repo
-[ 1013s]    dh_auto_build
-[ 1014s] 	/usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package -DskipTests -Dnotimestamp=true -Dlocale=en_US
-[ 1016s] Error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher
-[ 1016s] Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.classworlds.launcher.Launcher
-[ 1016s] dh_auto_build: error: /usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package -DskipTests -Dnotimestamp=true -Dlocale=en_US returned exit code 1
-[ 1016s] make: *** [debian/rules:4: build] Error 25
-[ 1016s] dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2
-[ 1018s] 
+libxcb
+[  624s] configure:5153: checking for unistd.h
+[  624s] configure:5153: gcc -c -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 conftest.c >&5
+[  624s] configure:5153: $? = 0
+[  624s] configure:5153: result: yes
+[  624s] configure:5153: checking for wchar.h
+[  624s] configure:5153: gcc -c -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 conftest.c >&5
+[  624s] configure:5153: $? = 0
+[  624s] configure:5153: result: yes
+[  624s] configure:5153: checking for minix/config.h
+[  624s] configure:5153: gcc -c -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 conftest.c >&5
+[  624s] conftest.c:49:10: fatal error: minix/config.h: No such file or directory
+[  624s]    49 | #include <minix/config.h>
+[  624s]       |          ^~~~~~~~~~~~~~~~
+[  624s] compilation terminated.
+[  624s] configure:5153: $? = 1
+[  624s] configure: failed program was:
 
 
-mingw-w64
-[11061s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-sched.lo -MD -MP -MF src/.deps/libwinpthread_la-sched.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/sched.c -o src/libwinpthread_la-sched.o >/dev/null 2>&1
-[11072s] mv -f src/.deps/libwinpthread_la-sched.Tpo src/.deps/libwinpthread_la-sched.Plo
-[11072s] /bin/bash ./libtool  --tag=CC   --mode=compile i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads  -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-clock.lo -MD -MP -MF src/.deps/libwinpthread_la-clock.Tpo -c -o src/libwinpthread_la-clock.lo `test -f 'src/clock.c' || echo '/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/'`src/clock.c
-[11073s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-clock.lo -MD -MP -MF src/.deps/libwinpthread_la-clock.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/clock.c  -DDLL_EXPORT -DPIC -o src/.libs/libwinpthread_la-clock.o
-[11083s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-clock.lo -MD -MP -MF src/.deps/libwinpthread_la-clock.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/clock.c -o src/libwinpthread_la-clock.o >/dev/null 2>&1
-[11093s] mv -f src/.deps/libwinpthread_la-clock.Tpo src/.deps/libwinpthread_la-clock.Plo
-[11093s] /bin/bash ./libtool  --tag=CC   --mode=compile i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads  -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-nanosleep.lo -MD -MP -MF src/.deps/libwinpthread_la-nanosleep.Tpo -c -o src/libwinpthread_la-nanosleep.lo `test -f 'src/nanosleep.c' || echo '/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/'`src/nanosleep.c
-[11094s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-nanosleep.lo -MD -MP -MF src/.deps/libwinpthread_la-nanosleep.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/nanosleep.c  -DDLL_EXPORT -DPIC -o src/.libs/libwinpthread_la-nanosleep.o
-[11103s] libtool: compile:  i686-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads -I/usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/include -DIN_WINPTHREAD -DWINPTHREAD_DBG=1 -D__USE_MINGW_ANSI_STDIO=0 -Wdate-time -I/usr/src/packages/BUILD/debian/tmp/usr/i686-w64-mingw32/include -Wall -DWIN32_LEAN_AND_MEAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -specs=/usr/share/dpkg/no-pie-compile.specs -MT src/libwinpthread_la-nanosleep.lo -MD -MP -MF src/.deps/libwinpthread_la-nanosleep.Tpo -c /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/nanosleep.c -o src/libwinpthread_la-nanosleep.o >/dev/null 2>&1
-[11112s] mv -f src/.deps/libwinpthread_la-nanosleep.Tpo src/.deps/libwinpthread_la-nanosleep.Plo
-[11112s] /bin/bash ./libtool   --tag=RC --mode=compile i686-w64-mingw32-windres  -i /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/version.rc -o src/version.lo
-[11113s] libtool: compile:  i686-w64-mingw32-windres -i /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/version.rc  -o src/.libs/version.o
-[11115s] /usr/src/packages/BUILD/mingw-w64-libraries/winpthreads/src/version.rc:23:10: fatal error: winver.h: No such file or directory
-[11115s]    23 | #include <winver.h>
-[11115s]       |          ^~~~~~~~~~
-[11115s] compilation terminated.
+nas
+[  643s] make[3]: Entering directory '/usr/src/packages/BUILD/server'
+[  643s] making all in server/dia...
+[  643s] make[4]: Entering directory '/usr/src/packages/BUILD/server/dia'
+[  643s] rm -f dispatch.o
+[  643s] gcc -c -O -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fcommon   -I. -I../include -I../../include -I../../lib/audio -I../../include    -Dlinux LinuxMachineDefines -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO   -DNASCONFSEARCHPATH=\"/etc/nas/\"   dispatch.c
+[  644s] In file included from /usr/include/riscv64-linux-gnu/bits/libc-header-start.h:33,
+[  644s]                  from /usr/include/string.h:26,
+[  644s]                  from ../include/os.h:124,
+[  644s]                  from ../include/misc.h:57,
+[  644s]                  from dispatch.c:52:
+[  644s] /usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+[  644s]   194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+[  644s]       |   ^~~~~~~
+[  646s] gcc: warning: LinuxMachineDefines: linker input file unused because linking not done
+[  646s] gcc: error: LinuxMachineDefines: linker input file not found: No such file or directory
+[  646s] make[4]: *** [Makefile:1077: dispatch.o] Error 1
 
 
-openbabel
-[ 3952s] /usr/bin/make  -f src/formats/CMakeFiles/MNAformat.dir/build.make src/formats/CMakeFiles/MNAformat.dir/depend
-[ 3952s] make[4]: Entering directory '/usr/src/packages/BUILD/builddir'
-[ 3952s] cd /usr/src/packages/BUILD/builddir && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /usr/src/packages/BUILD /usr/src/packages/BUILD/src/formats /usr/src/packages/BUILD/builddir /usr/src/packages/BUILD/builddir/src/formats /usr/src/packages/BUILD/builddir/src/formats/CMakeFiles/MNAformat.dir/DependInfo.cmake --color=
-[ 3952s] make[4]: Leaving directory '/usr/src/packages/BUILD/builddir'
-[ 3952s] /usr/bin/make  -f src/formats/CMakeFiles/MNAformat.dir/build.make src/formats/CMakeFiles/MNAformat.dir/build
-[ 3952s] make[4]: Entering directory '/usr/src/packages/BUILD/builddir'
-[ 3953s] [ 34%] Building CXX object src/formats/CMakeFiles/MNAformat.dir/MNAformat.cpp.o
-[ 3953s] cd /usr/src/packages/BUILD/builddir/src/formats && /usr/bin/c++ -DBUILD_LINK_AS_DLL -DHAVE_EIGEN -DHAVE_EIGEN3 -DHAVE_LIBZ -DHAVE_RADPIJSON -DHAVE_SHARED_POINTER -DHAVE_WXWIDGETS -DMNAformat_EXPORTS -DUSING_DYNAMIC_LIBS -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/usr/src/packages/BUILD/builddir/include -I/usr/src/packages/BUILD/data -I/usr/src/packages/BUILD/include -I/usr/include/eigen3 -I/usr/include/cairo -I/usr/include/libxml2 -isystem /usr/lib/riscv64-linux-gnu/wx/include/gtk3-unicode-3.0 -isystem /usr/include/wx-3.0 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -std=gnu++98 -Wdate-time -D_FORTIFY_SOURCE=2 -Wdate-time -D_FORTIFY_SOURCE=2 -pthread -fopenmp -fPIC -std=gnu++11 -MD -MT src/formats/CMakeFiles/MNAformat.dir/MNAformat.cpp.o -MF CMakeFiles/MNAformat.dir/MNAformat.cpp.o.d -o CMakeFiles/MNAformat.dir/MNAformat.cpp.o -c /usr/src/packages/BUILD/src/formats/MNAformat.cpp
-[ 3953s] [ 35%] Building CXX object src/formats/CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o
-[ 3953s] cd /usr/src/packages/BUILD/builddir/src/formats && /usr/bin/c++ -DBUILD_LINK_AS_DLL -DHAVE_EIGEN -DHAVE_EIGEN3 -DHAVE_LIBZ -DHAVE_RADPIJSON -DHAVE_SHARED_POINTER -DHAVE_WXWIDGETS -DUSING_DYNAMIC_LIBS -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -Dasciiformat_EXPORTS -I/usr/src/packages/BUILD/builddir/include -I/usr/src/packages/BUILD/data -I/usr/src/packages/BUILD/include -I/usr/include/eigen3 -I/usr/include/cairo -I/usr/include/libxml2 -isystem /usr/lib/riscv64-linux-gnu/wx/include/gtk3-unicode-3.0 -isystem /usr/include/wx-3.0 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -std=gnu++98 -Wdate-time -D_FORTIFY_SOURCE=2 -Wdate-time -D_FORTIFY_SOURCE=2 -pthread -fopenmp -fPIC -std=gnu++11 -MD -MT src/formats/CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o -MF CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o.d -o CMakeFiles/asciiformat.dir/__/depict/asciipainter.cpp.o -c /usr/src/packages/BUILD/src/depict/asciipainter.cpp
-[ 3957s] In file included from /usr/src/packages/BUILD/src/depict/asciipainter.cpp:18:
-[ 3957s] /usr/src/packages/BUILD/include/openbabel/obutil.h: In member function 'void OpenBabel::OBStopwatch::Start()':
-[ 3957s] /usr/src/packages/BUILD/include/openbabel/obutil.h:65:14: error: 'clock' was not declared in this scope
-[ 3957s]    65 |       start= clock();
-[ 3957s]       |              ^~~~~
-[ 3957s] /usr/src/packages/BUILD/include/openbabel/obutil.h:40:1: note: 'clock' is defined in header '<ctime>'; did you forget to '#include <ctime>'?
+open-iscsi
+[  737s] /bin/cat: /lib/modules/5.3.18-150300.59.54-default/build/Makefile: No such file or directory
+[  737s] cc -Wdate-time -D_FORTIFY_SOURCE=2 -Wno-error=zero-length-bounds -Wno-error=format-overflow= -Wno-error=format-truncation= -Wno-error=maybe-uninitialized -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wall -Wextra -Werror -Wstrict-prototypes -fno-common -I../include -I. -D_GNU_SOURCE -I../libopeniscsiusr  -Wdate-time -D_FORTIFY_SOURCE=2  -c -o iscsi_util.o iscsi_util.c
+[  737s] cc -Wdate-time -D_FORTIFY_SOURCE=2 -Wno-error=zero-length-bounds -Wno-error=format-overflow= -Wno-error=format-truncation= -Wno-error=maybe-uninitialized -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wall -Wextra -Werror -Wstrict-prototypes -fno-common -I../include -I. -D_GNU_SOURCE -I../libopeniscsiusr  -Wdate-time -D_FORTIFY_SOURCE=2  -c -o io.o io.c
+[  741s] cc -Wdate-time -D_FORTIFY_SOURCE=2 -Wno-error=zero-length-bounds -Wno-error=format-overflow= -Wno-error=format-truncation= -Wno-error=maybe-uninitialized -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wall -Wextra -Werror -Wstrict-prototypes -fno-common -I../include -I. -D_GNU_SOURCE -I../libopeniscsiusr  -Wdate-time -D_FORTIFY_SOURCE=2  -c -o auth.o auth.c
+[  742s] cc -Wdate-time -D_FORTIFY_SOURCE=2 -Wno-error=zero-length-bounds -Wno-error=format-overflow= -Wno-error=format-truncation= -Wno-error=maybe-uninitialized -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wall -Wextra -Werror -Wstrict-prototypes -fno-common -I../include -I. -D_GNU_SOURCE -I../libopeniscsiusr  -Wdate-time -D_FORTIFY_SOURCE=2  -c -o iscsi_timer.o iscsi_timer.c
+[  742s] auth.c: In function 'acl_chap_auth_request':
+[  742s] auth.c:112:34: error: the comparison will always evaluate as 'false' for the address of 'username_in' will never be NULL [-Werror=address]
+[  742s]   112 |         if (session->username_in == NULL) {
+[  742s]       |                                  ^~
+[  742s] In file included from auth.c:36:
+[  742s] initiator.h:243:14: note: 'username_in' declared here
+[  742s]   243 |         char username_in[AUTH_STR_MAX_LEN];
+[  742s]       |              ^~~~~~~~~~~
+[  742s] auth.c:125:35: error: the comparison will always evaluate as 'false' for the address of 'password_in' will never be NULL [-Werror=address]
+[  742s]   125 |             (session->password_in == NULL) ||
+[  742s]       |                                   ^~
+
+
+opencolorio
+[ 1955s] cd /usr/src/packages/BUILD/debian/cmake/src/core && /usr/bin/c++ -DOpenColorIO_EXPORTS -I/usr/src/packages/BUILD/export -I/usr/src/packages/BUILD/debian/cmake/export -I/usr/src/packages/BUILD/ext/oiio/src/include -I/usr/src/packages/BUILD/debian/cmake/ext/dist/include -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Wshadow -Wconversion -Wcast-qual -Wformat=2 -fPIC -DTIXML_USE_STL   -fPIC -fvisibility=hidden -Werror -MD -MT src/core/CMakeFiles/OpenColorIO.dir/AllocationTransform.cpp.o -MF CMakeFiles/OpenColorIO.dir/AllocationTransform.cpp.o.d -o CMakeFiles/OpenColorIO.dir/AllocationTransform.cpp.o -c /usr/src/packages/BUILD/src/core/AllocationTransform.cpp
+[ 1955s] [  1%] Building CXX object src/core/CMakeFiles/OpenColorIO.dir/AllocationOp.cpp.o
+[ 1955s] cd /usr/src/packages/BUILD/debian/cmake/src/core && /usr/bin/c++ -DOpenColorIO_EXPORTS -I/usr/src/packages/BUILD/export -I/usr/src/packages/BUILD/debian/cmake/export -I/usr/src/packages/BUILD/ext/oiio/src/include -I/usr/src/packages/BUILD/debian/cmake/ext/dist/include -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Wshadow -Wconversion -Wcast-qual -Wformat=2 -fPIC -DTIXML_USE_STL   -fPIC -fvisibility=hidden -Werror -MD -MT src/core/CMakeFiles/OpenColorIO.dir/AllocationOp.cpp.o -MF CMakeFiles/OpenColorIO.dir/AllocationOp.cpp.o.d -o CMakeFiles/OpenColorIO.dir/AllocationOp.cpp.o -c /usr/src/packages/BUILD/src/core/AllocationOp.cpp
+[ 1965s] [  2%] Building CXX object src/core/CMakeFiles/OpenColorIO.dir/Baker.cpp.o
+[ 1965s] cd /usr/src/packages/BUILD/debian/cmake/src/core && /usr/bin/c++ -DOpenColorIO_EXPORTS -I/usr/src/packages/BUILD/export -I/usr/src/packages/BUILD/debian/cmake/export -I/usr/src/packages/BUILD/ext/oiio/src/include -I/usr/src/packages/BUILD/debian/cmake/ext/dist/include -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Wshadow -Wconversion -Wcast-qual -Wformat=2 -fPIC -DTIXML_USE_STL   -fPIC -fvisibility=hidden -Werror -MD -MT src/core/CMakeFiles/OpenColorIO.dir/Baker.cpp.o -MF CMakeFiles/OpenColorIO.dir/Baker.cpp.o.d -o CMakeFiles/OpenColorIO.dir/Baker.cpp.o -c /usr/src/packages/BUILD/src/core/Baker.cpp
+[ 1966s] [  3%] Building CXX object src/core/CMakeFiles/OpenColorIO.dir/CDLTransform.cpp.o
+[ 1966s] cd /usr/src/packages/BUILD/debian/cmake/src/core && /usr/bin/c++ -DOpenColorIO_EXPORTS -I/usr/src/packages/BUILD/export -I/usr/src/packages/BUILD/debian/cmake/export -I/usr/src/packages/BUILD/ext/oiio/src/include -I/usr/src/packages/BUILD/debian/cmake/ext/dist/include -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Wshadow -Wconversion -Wcast-qual -Wformat=2 -fPIC -DTIXML_USE_STL   -fPIC -fvisibility=hidden -Werror -MD -MT src/core/CMakeFiles/OpenColorIO.dir/CDLTransform.cpp.o -MF CMakeFiles/OpenColorIO.dir/CDLTransform.cpp.o.d -o CMakeFiles/OpenColorIO.dir/CDLTransform.cpp.o -c /usr/src/packages/BUILD/src/core/CDLTransform.cpp
+[ 1978s] [  4%] Building CXX object src/core/CMakeFiles/OpenColorIO.dir/Caching.cpp.o
+[ 1978s] cd /usr/src/packages/BUILD/debian/cmake/src/core && /usr/bin/c++ -DOpenColorIO_EXPORTS -I/usr/src/packages/BUILD/export -I/usr/src/packages/BUILD/debian/cmake/export -I/usr/src/packages/BUILD/ext/oiio/src/include -I/usr/src/packages/BUILD/debian/cmake/ext/dist/include -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Wshadow -Wconversion -Wcast-qual -Wformat=2 -fPIC -DTIXML_USE_STL   -fPIC -fvisibility=hidden -Werror -MD -MT src/core/CMakeFiles/OpenColorIO.dir/Caching.cpp.o -MF CMakeFiles/OpenColorIO.dir/Caching.cpp.o.d -o CMakeFiles/OpenColorIO.dir/Caching.cpp.o -c /usr/src/packages/BUILD/src/core/Caching.cpp
+[ 1986s] In file included from /usr/src/packages/BUILD/src/core/Caching.cpp:32:
+[ 1986s] /usr/src/packages/BUILD/src/core/PathUtils.h:58:29: error: 'template<class _Arg1, class _Arg2, class _Result> struct std::binary_function' is deprecated [-Werror=deprecated-declarations]
+[ 1986s]    58 |     struct EnvMapKey : std::binary_function <T, T, bool>
+[ 1986s]       |                             ^~~~~~~~~~~~~~~
+[ 1986s] In file included from /usr/include/c++/12/string:48,
+[ 1986s]                  from /usr/src/packages/BUILD/export/OpenColorIO/OpenColorIO.h:35,
+[ 1986s]                  from /usr/src/packages/BUILD/src/core/Caching.cpp:29:
 
 
 petsc
-[ 2137s] TESTING: consistencyChecks from config.packages.f2cblaslapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:1004)
-[ 2137s] TESTING: alternateConfigureLibrary from config.packages.f2cblaslapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:1000)
-[ 2137s] TESTING: consistencyChecks from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:1004)
-[ 2137s] TESTING: checkDependencies from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/package.py:905)
-[ 2137s] TESTING: configureLibrary from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/packages/BlasLapack.py:485)
-[ 2154s] TESTING: checkLib from config.packages.BlasLapack(/usr/src/packages/BUILD/config/BuildSystem/config/packages/BlasLapack.py:109)
-[ 2154s] *******************************************************************************
-[ 2154s]          UNABLE to CONFIGURE with GIVEN OPTIONS    (see configure.log for details):
-[ 2154s] -------------------------------------------------------------------------------
-[ 2154s] You set a value for --with-blas-lib=<lib> and --with-lapack-lib=<lib>, but ['-lblas'] and ['-llapack'] cannot be used
-[ 2154s] *******************************************************************************
-[ 2154s] 
-[ 2155s] dh_auto_configure: error: ./configure --build=riscv64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir=\${prefix}/lib/riscv64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking --with-debugging=1 --shared-library-extension=_real --with-shared-libraries --with-pic=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpif90 --with-cxx-dialect=C\+\+11 --with-opencl=1 --with-blas-lib=-lblas --with-lapack-lib=-llapack --with-scalapack=1 --with-scalapack-lib=-lscalapack-openmpi --with-ptscotch=1 --with-ptscotch-include=/usr/include/scotch "--with-ptscotch-lib=-lptesmumps -lptscotch -lptscotcherr" --with-fftw=1 --with-fftw-include=\[\] "--with-fftw-lib=-lfftw3 -lfftw3_mpi" --with-yaml=1 --with-valgrind=1 --with-hdf5-include=/usr/include/hdf5/openmpi "--with-hdf5-lib=-L/usr/lib/riscv64-linux-gnu/hdf5/openmpi -L/usr/lib/riscv64-linux-gnu/openmpi/lib -lhdf5 -lmpi" --CXX_LINKER_FLAGS=-Wl,--no-as-needed --with-hypre=1 --with-hypre-include=/usr/include/hypre --with-hypre-lib=-lHYPRE --with-mumps=1 --with-mumps-include=\[\] "--with-mumps-lib=-ldmumps -lzmumps -lsmumps -lcmumps -lmumps_common -lpord" --with-suitesparse=1 --with-suitesparse-include=/usr/include/suitesparse "--with-suitesparse-lib=-lspqr -lumfpack -lamd -lcholmod -lklu" --with-superlu=1 --with-superlu-include=/usr/include/superlu --with-superlu-lib=-lsuperlu --with-superlu_dist=1 --with-superlu_dist-include=/usr/include/superlu-dist --with-superlu_dist-lib=-lsuperlu_dist --prefix=/usr/lib/petscdir/petsc3.16/riscv64-linux-gnu-real-debug --PETSC_ARCH=riscv64-linux-gnu-real-debug "CFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC" "CXXFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC" "FCFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -fPIC -ffree-line-length-0" "FFLAGS=-g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -fPIC -ffree-line-length-0" "LDFLAGS=-Wl,-z,relro -fPIC" MAKEFLAGS=w returned exit code 1
-[ 2155s] Executing: uname -s
-[ 2155s] stdout: Linux
-[ 2155s] 
+[ 2155s] # 0 "<built-in>"
+[ 2155s] # 0 "<command-line>"
+[ 2155s] # 1 "/usr/include/stdc-predef.h" 1 3 4
+[ 2155s] # 0 "<command-line>" 2
+[ 2155s] # 1 "/tmp/petsc-orq54ye3/config.headers/conftest.c"
+[ 2155s] # 1 "/tmp/petsc-orq54ye3/config.headers/confdefs.h" 1
+[ 2155s] # 2 "/tmp/petsc-orq54ye3/config.headers/conftest.c" 2
+[ 2155s] # 1 "/tmp/petsc-orq54ye3/config.headers/conffix.h" 1
+[ 2155s] # 3 "/tmp/petsc-orq54ye3/config.headers/conftest.c" 2
+[ 2155s] stderr:
+[ 2155s] /tmp/petsc-orq54ye3/config.headers/conftest.c:3:10: fatal error: dos.h: No such file or directory
+[ 2155s]     3 | #include <dos.h>
+[ 2155s]       |          ^~~~~~~
+[ 2155s] compilation terminated.
+[ 2155s] Source:
+[ 2155s] #include "confdefs.h"
 
 
-pkg-config
-[  692s] checking for default search path for .pc files... /usr/local/lib/riscv64-linux-gnu/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/riscv64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
-[  692s] checking for system include path to avoid -I flags... /usr/include
-[  692s] checking for system library path to avoid -L flags... /lib:/lib/riscv64-linux-gnu:/usr/lib:/usr/lib/riscv64-linux-gnu
-[  692s] configure: creating ./config.lt
-[  702s] config.lt: creating libtool
-[  703s] checking whether to list both direct and indirect dependencies... no
-[  703s] checking for Win32... no
-[  703s] checking if prefix should be redefined at runtime... no
-[  703s] checking if internal glib should be used... no
-[  703s] checking for riscv64-linux-gnu-pkg-config... no
-[  703s] checking for pkg-config... no
-[  703s] checking for glib-2.0 >= 2.16... no
-[  703s] configure: error: Either a previously installed pkg-config or "glib-2.0 >= 2.16" could not be found. Please set GLIB_CFLAGS and GLIB_LIBS to the correct values or pass --with-internal-glib to configure to use the bundled copy.
-[  704s] make[1]: *** [debian/rules:25: override_dh_auto_configure] Error 1
-[  704s] make[1]: Leaving directory '/usr/src/packages/BUILD'
-[  704s] make: *** [debian/rules:22: binary] Error 2
+pstoedit
+[ 3108s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -DHAVE_LIBPLOTTER -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR=\"/usr/share/pstoedit\" -DPSTOEDITLIBDIR=\"/usr/lib/riscv64-linux-gnu/pstoedit\" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c drvfig.cpp  -fPIC -DPIC -o .libs/drvfig.o
+[ 3121s] /bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I.  -DHAVE_LIBPLOTTER  -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6   -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR="\"/usr/share/pstoedit\"" -DPSTOEDITLIBDIR="\"/usr/lib/riscv64-linux-gnu/pstoedit\"" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN  -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c -o drvidraw.lo drvidraw.cpp
+[ 3124s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -DHAVE_LIBPLOTTER -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR=\"/usr/share/pstoedit\" -DPSTOEDITLIBDIR=\"/usr/lib/riscv64-linux-gnu/pstoedit\" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c drvidraw.cpp  -fPIC -DPIC -o .libs/drvidraw.o
+[ 3138s] /bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I.  -DHAVE_LIBPLOTTER  -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6   -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR="\"/usr/share/pstoedit\"" -DPSTOEDITLIBDIR="\"/usr/lib/riscv64-linux-gnu/pstoedit\"" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN  -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c -o drvsampl.lo drvsampl.cpp
+[ 3141s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -DHAVE_LIBPLOTTER -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR=\"/usr/share/pstoedit\" -DPSTOEDITLIBDIR=\"/usr/lib/riscv64-linux-gnu/pstoedit\" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c drvsampl.cpp  -fPIC -DPIC -o .libs/drvsampl.o
+[ 3162s] /bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I.  -DHAVE_LIBPLOTTER  -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6   -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR="\"/usr/share/pstoedit\"" -DPSTOEDITLIBDIR="\"/usr/lib/riscv64-linux-gnu/pstoedit\"" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN  -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c -o drvlplot.lo drvlplot.cpp
+[ 3165s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -DHAVE_LIBPLOTTER -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR=\"/usr/share/pstoedit\" -DPSTOEDITLIBDIR=\"/usr/lib/riscv64-linux-gnu/pstoedit\" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c drvlplot.cpp  -fPIC -DPIC -o .libs/drvlplot.o
+[ 3166s] /bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I.  -DHAVE_LIBPLOTTER  -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6   -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR="\"/usr/share/pstoedit\"" -DPSTOEDITLIBDIR="\"/usr/lib/riscv64-linux-gnu/pstoedit\"" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN  -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c -o drvpptx.lo drvpptx.cpp
+[ 3170s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -DHAVE_LIBPLOTTER -DHAVE_MKSTEMP -DHAVE_MAGIC -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -I/usr/include/riscv64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -DHAVE_LIBZIP -DDEFAULTGS=gs -DPSTOEDITDATADIR=\"/usr/share/pstoedit\" -DPSTOEDITLIBDIR=\"/usr/lib/riscv64-linux-gnu/pstoedit\" -Wall -Wextra -Wuninitialized -Wswitch-default -Wunused -Wshadow -Wwrite-strings -Wcast-qual -Wpointer-arith -Wno-long-long -Wdate-time -D_FORTIFY_SOURCE=2 -D_LITTLE_ENDIAN -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,--as-needed -Wl,-O1 -DINTERNALBOOL -c drvpptx.cpp  -fPIC -DPIC -o .libs/drvpptx.o
+[ 3184s] drvpptx.cpp: In member function 'Point drvPPTX::pathCentroid()':
+[ 3184s] drvpptx.cpp:1335:8: error: 'unique_ptr' is not a member of 'std'
+[ 3184s]  1335 |   std::unique_ptr<Point[]>  allKnots ( new Point[numElts + 1]);
+[ 3184s]       |        ^~~~~~~~~~
+[ 3184s] drvpptx.cpp:68:1: note: 'std::unique_ptr' is defined in header '<memory>'; did you forget to '#include <memory>'?
+[ 3184s]    67 | #include <zip.h>
+[ 3184s]   +++ |+#include <memory>
 
 
-plexus-classworlds
-[  833s] dpkg-source: info: building plexus-classworlds in plexus-classworlds_2.6.0-1.debian.tar.xz
-[  834s] dpkg-source: info: building plexus-classworlds in plexus-classworlds_2.6.0-1.dsc
-[  834s]  debian/rules build
-[  834s] dh build
-[  835s]    dh_update_autotools_config
-[  835s]    dh_autoreconf
-[  836s]    dh_auto_configure
-[  958s] 	mh_patchpoms -plibplexus-classworlds-java --debian-build --keep-pom-version --maven-repo=/usr/src/packages/BUILD/debian/maven-repo
-[  967s]    dh_auto_build
-[  968s] 	/usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package javadoc:jar javadoc:aggregate -DskipTests -Dnotimestamp=true -Dlocale=en_US
-[  971s] Error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher
-[  971s] Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.classworlds.launcher.Launcher
-[  971s] dh_auto_build: error: /usr/lib/jvm/default-java/bin/java -noverify -cp /usr/share/maven/boot/plexus-classworlds-2.x.jar -Dmaven.home=/usr/share/maven -Dmaven.multiModuleProjectDirectory=/usr/src/packages/BUILD -Dclassworlds.conf=/etc/maven/m2-debian.conf -Dproperties.file.manual=/usr/src/packages/BUILD/debian/maven.properties org.codehaus.plexus.classworlds.launcher.Launcher -s/etc/maven/settings-debian.xml -Ddebian.dir=/usr/src/packages/BUILD/debian -Dmaven.repo.local=/usr/src/packages/BUILD/debian/maven-repo --batch-mode package javadoc:jar javadoc:aggregate -DskipTests -Dnotimestamp=true -Dlocale=en_US returned exit code 1
-[  971s] make: *** [debian/rules:4: build] Error 25
-[  971s] dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2
-[  972s] 
+spirv-tools
+[ 3149s] In file included from /usr/include/string.h:535,
+[ 3149s]                  from /usr/include/c++/12/cstring:42,
+[ 3149s]                  from /usr/src/packages/BUILD/source/util/bitutils.h:20,
+[ 3149s]                  from /usr/src/packages/BUILD/source/util/hex_float.h:27,
+[ 3149s]                  from /usr/src/packages/BUILD/source/opt/constants.h:29,
+[ 3149s]                  from /usr/src/packages/BUILD/source/opt/ir_context.h:31,
+[ 3149s]                  from /usr/src/packages/BUILD/source/opt/amd_ext_to_khr.h:18,
+[ 3149s]                  from /usr/src/packages/BUILD/source/opt/amd_ext_to_khr.cpp:15:
+[ 3149s] In function 'void* memcpy(void*, const void*, size_t)',
+[ 3149s]     inlined from 'void spvtools::opt::IRContext::AddExtension(const std::string&)' at /usr/src/packages/BUILD/source/opt/ir_context.h:1023:14:
+[ 3149s] /usr/include/riscv64-linux-gnu/bits/string_fortified.h:29:33: error: 'void* __builtin_memcpy(void*, const void*, long unsigned int)' specified bound between 18446744073709551612 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Werror=stringop-overflow=]
+[ 3149s]    29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+[ 3149s]       |          ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+[ 3149s]    30 |                                  __glibc_objsize0 (__dest));
+[ 3149s]       |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 3170s] cc1plus: all warnings being treated as errors
 
 
-rustc
-[ 1291s] touch "debian/dh_auto_configure.stamp"
-[ 1291s] sed -i -e 's/^docs = false/docs = true/' debian/config.toml
-[ 1292s] make[2]: Leaving directory '/usr/src/packages/BUILD'
-[ 1292s]    debian/rules override_dh_auto_build-arch
-[ 1292s] make[2]: Entering directory '/usr/src/packages/BUILD'
-[ 1293s] /usr/bin/rustc: error while loading shared libraries: librustc_driver-29e70c4625ab372c.so: cannot open shared object file: No such file or directory
-[ 1293s] RUST_BACKTRACE=1 python3 src/bootstrap/bootstrap.py -j 2 build --stage 2 --config debian/config.toml --on-fail env
-[ 1298s] /usr/src/packages/BUILD/src/bootstrap/bootstrap.py:5: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
-[ 1298s]   import distutils.version
-[ 1299s] Building rustbuild
-[ 1299s] running: /usr/bin/cargo build --manifest-path /usr/src/packages/BUILD/src/bootstrap/Cargo.toml --verbose --verbose
-[ 1299s] warning: /usr/src/packages/BUILD/Cargo.toml: unused manifest key: profile.dev.package.cargo-util.path
-[ 1299s] error: process didn't exit successfully: `/usr/bin/rustc -vV` (exit status: 127)
-[ 1299s] --- stderr
-[ 1299s] /usr/bin/rustc: error while loading shared libraries: librustc_driver-29e70c4625ab372c.so: cannot open shared object file: No such file or directory
-[ 1299s] 
+systemtap
+[ 1566s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-elaborate.o `test -f 'elaborate.cxx' || echo './'`elaborate.cxx
+[ 1569s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-translate.o `test -f 'translate.cxx' || echo './'`translate.cxx
+[ 1736s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-tapsets.o `test -f 'tapsets.cxx' || echo './'`tapsets.cxx
+[ 1750s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-buildrun.o `test -f 'buildrun.cxx' || echo './'`buildrun.cxx
+[ 1805s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-loc2stap.o `test -f 'loc2stap.cxx' || echo './'`loc2stap.cxx
+[ 1870s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-hash.o `test -f 'hash.cxx' || echo './'`hash.cxx
+[ 1898s] gcc -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -fexceptions -Wall -Wextra -Werror -Wunused -Wformat=2 -W -I/usr/include/nss -I/usr/include/nspr -DSTAP -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-mdfour.o `test -f 'mdfour.c' || echo './'`mdfour.c
+[ 1902s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-cache.o `test -f 'cache.cxx' || echo './'`cache.cxx
+[ 1930s] g++ -DHAVE_CONFIG_H -I.  -DBINDIR='"/usr/bin"' -DSYSCONFDIR='"/etc"' -DPKGDATADIR='"/usr/share/systemtap"' -DPKGLIBDIR='"/usr/lib/systemtap"' -DLOCALEDIR='"/usr/share/locale"' -DDOCDIR='"/usr/share/doc/systemtap"' -DPYEXECDIR='""' -DPY3EXECDIR='""' -I./includes -I./includes/sys -DSTAP_SDT_V2 -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -D_REENTRANT -I/usr/include/nss -I/usr/include/nspr -fstack-protector-all -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -c -o stap-util.o `test -f 'util.cxx' || echo './'`util.cxx
+[ 1940s] util.cxx: In function 'void ltrim(std::string&)':
+[ 1940s] util.cxx:1764:56: error: 'std::pointer_to_unary_function<_Arg, _Result> std::ptr_fun(_Result (*)(_Arg)) [with _Arg = int; _Result = int]' is deprecated: use 'std::function' instead [-Werror=deprecated-declarations]
+[ 1940s]  1764 |                        std::not1(std::ptr_fun<int, int>(std::isspace))));
+[ 1940s]       |                                  ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[ 1940s] In file included from /usr/include/c++/12/string:48,
+[ 1940s]                  from util.h:8,
+[ 1940s]                  from util.cxx:17:
 
 
-texlive-extra
-[  579s] Processing triggers for man-db (2.9.4-2) ...
-[  580s] [268/271] installing g++-12-12.2.0-9+deepin+0u1
-[  585s] [269/271] installing g++-4:12.2.0-1
-[  586s] update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
-[  586s] [270/271] installing debhelper-13.5.2
-[  587s] Processing triggers for man-db (2.9.4-2) ...
-[  594s] [271/271] installing build-essential-12.9
-[  595s] configuring all installed packages...
-[  596s] now finalizing build dir...
-[  596s] SIOCSIFADDR: Permission denied
-[  597s] Running build time source services...
-[  599s] dpkg-source: warning: extracting unsigned source package (/usr/src/packages/SOURCES/texlive-extra_2021.20210921-1.dsc)
-[  599s] dpkg-source: error: cannot fstat file /usr/src/packages/SOURCES/texlive-extra_2021.20210921.orig-tex4ht.tar.xz: No such file or directory
-[  599s] -----------------------------------------------------------------
-[  599s] ----- building texlive-extra_2021.20210921-1.dsc (user abuild)
-[  599s] -----------------------------------------------------------------
+tpm2-tss
+[ 1040s] configure:5886: checking for unistd.h
+[ 1040s] configure:5886: gcc -c -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 conftest.c >&5
+[ 1040s] configure:5886: $? = 0
+[ 1040s] configure:5886: result: yes
+[ 1040s] configure:5886: checking for wchar.h
+[ 1040s] configure:5886: gcc -c -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 conftest.c >&5
+[ 1040s] configure:5886: $? = 0
+[ 1040s] configure:5886: result: yes
+[ 1040s] configure:5886: checking for minix/config.h
+[ 1040s] configure:5886: gcc -c -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 conftest.c >&5
+[ 1040s] conftest.c:50:10: fatal error: minix/config.h: No such file or directory
+[ 1040s]    50 | #include <minix/config.h>
+[ 1040s]       |          ^~~~~~~~~~~~~~~~
+[ 1040s] compilation terminated.
+[ 1040s] configure:5886: $? = 1
+[ 1040s] configure: failed program was:
+
+
+xaw3d
+[  724s] make[2]: Entering directory '/usr/src/packages/BUILD/xc/lib/Xaw3d'
+[  724s] + mkdir unshared
+[  724s] sed -e 's/\/\* I18n support \*\//#define XAW_INTERNATIONALIZATION/' -e 's/\/\* XPM support \*\//#undef XAW_MULTIPLANE_PIXMAPS/' 	-e 's/\/\* gray stipples \*\//#define XAW_GRAY_BLKWHT_STIPPLES/' -e 's/\/\* arrow scrollbars \*\//#define XAW_ARROW_SCROLLBARS/' 	Xaw3dP.h.sed > Xaw3dP.h
+[  725s] rm -f AllWidgets.o unshared/AllWidgets.o
+[  725s] gcc -c    -I.    -Dlinux LinuxMachineDefines -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO    -D_REENTRANT -DARROW_SCROLLBAR 	-O -g  AllWidgets.c -o unshared/AllWidgets.o
+[  725s] In file included from /usr/include/riscv64-linux-gnu/sys/types.h:25,
+[  725s]                  from /usr/include/X11/Xlib.h:38,
+[  725s]                  from /usr/include/X11/Intrinsic.h:53,
+[  725s]                  from /usr/include/X11/IntrinsicP.h:51,
+[  725s]                  from AllWidgets.c:30:
+[  725s] /usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+[  725s]   194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+[  725s]       |   ^~~~~~~
+[  726s] gcc: warning: LinuxMachineDefines: linker input file unused because linking not done
+[  726s] gcc: error: LinuxMachineDefines: linker input file not found: No such file or directory
+[  726s] make[2]: *** [Makefile:1105: AllWidgets.o] Error 1
+
+
+zeromq3
+[ 1739s] rm zmq_timers.xml zmq_disconnect.xml zmq_msg_move.xml zmq_udp.xml zmq_atomic_counter_set.xml zmq_ctx_set.xml zmq_ipc.xml zmq_msg_routing_id.xml zmq_z85_encode.xml zmq_ctx_shutdown.xml zmq_msg_send.xml zmq_atomic_counter_new.xml zmq.xml zmq_atomic_counter_destroy.xml zmq_sendmsg.xml zmq_msg_gets.xml zmq_msg_init_buffer.xml zmq_msg_more.xml zmq_msg_set.xml zmq_poll.xml zmq_atomic_counter_value.xml zmq_socket.xml zmq_ctx_get.xml zmq_close.xml zmq_curve.xml zmq_recvmsg.xml zmq_inproc.xml zmq_msg_recv.xml zmq_strerror.xml zmq_getsockopt.xml zmq_setsockopt.xml zmq_errno.xml zmq_recv.xml zmq_curve_keypair.xml zmq_vmci.xml zmq_z85_decode.xml zmq_socket_monitor_versioned.xml zmq_atomic_counter_dec.xml zmq_msg_close.xml zmq_bind.xml zmq_send_const.xml zmq_unbind.xml zmq_send.xml zmq_version.xml zmq_msg_get.xml zmq_socket_monitor.xml zmq_connect.xml zmq_msg_size.xml zmq_msg_copy.xml zmq_curve_public.xml zmq_null.xml zmq_ctx_new.xml zmq_gssapi.xml zmq_ctx_term.xml zmq_msg_init_data.xml zmq_atomic_counter_inc.xml zmq_msg_data.xml zmq_msg_init_size.xml zmq_pgm.xml zmq_proxy_steerable.xml zmq_poller.xml zmq_msg_set_routing_id.xml zmq_msg_init.xml zmq_tcp.xml zmq_proxy.xml zmq_tipc.xml zmq_has.xml zmq_connect_peer.xml zmq_plain.xml
+[ 1739s] make[2]: Leaving directory '/usr/src/packages/BUILD/doc'
+[ 1739s] make[2]: Entering directory '/usr/src/packages/BUILD'
+[ 1740s] g++ -DHAVE_CONFIG_H -I. -I./src  -I./include -I./include -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE -Wdate-time -D_FORTIFY_SOURCE=2  -pedantic -Wall -Wno-long-long -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -ffat-lto-objects -c -o tools/curve_keygen.o tools/curve_keygen.cpp
+[ 1741s] /bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src        -I/usr/include/pgm-5.3 -I/usr/include/libxml2 -isystem /usr/include/mit-krb5 -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE -Wdate-time -D_FORTIFY_SOURCE=2 -fvisibility=hidden     -pedantic -Wall -Wno-long-long -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -ffat-lto-objects -c -o src/libzmq_la-address.lo `test -f 'src/address.cpp' || echo './'`src/address.cpp
+[ 1743s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I/usr/include/pgm-5.3 -I/usr/include/libxml2 -isystem /usr/include/mit-krb5 -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE -Wdate-time -D_FORTIFY_SOURCE=2 -fvisibility=hidden -pedantic -Wall -Wno-long-long -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -ffat-lto-objects -c src/address.cpp  -fPIC -DPIC -o src/.libs/libzmq_la-address.o
+[ 1743s] /bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src        -I/usr/include/pgm-5.3 -I/usr/include/libxml2 -isystem /usr/include/mit-krb5 -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE -Wdate-time -D_FORTIFY_SOURCE=2 -fvisibility=hidden     -pedantic -Wall -Wno-long-long -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -ffat-lto-objects -c -o src/libzmq_la-channel.lo `test -f 'src/channel.cpp' || echo './'`src/channel.cpp
+[ 1745s] libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I/usr/include/pgm-5.3 -I/usr/include/libxml2 -isystem /usr/include/mit-krb5 -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE -Wdate-time -D_FORTIFY_SOURCE=2 -fvisibility=hidden -pedantic -Wall -Wno-long-long -g -O2 -ffile-prefix-map=/usr/src/packages/BUILD=. -fstack-protector-strong -Wformat -Werror=format-security -ffat-lto-objects -c src/channel.cpp  -fPIC -DPIC -o src/.libs/libzmq_la-channel.o
+[ 1750s] In file included from src/precompiled.hpp:43,
+[ 1750s]                  from src/address.cpp:30:
+[ 1750s] src/platform.hpp:218:28: error: 'undefined' was not declared in this scope
+[ 1750s]   218 | #define ZMQ_CACHELINE_SIZE undefined
+[ 1750s]       |                            ^~~~~~~~~
+[ 1750s] src/yqueue.hpp:60:45: note: in expansion of macro 'ZMQ_CACHELINE_SIZE'
+[ 1750s]    60 | template <typename T, int N, size_t ALIGN = ZMQ_CACHELINE_SIZE> class yqueue_t
+[ 1750s]       |                                             ^~~~~~~~~~~~~~~~~~
 
 
 
 
-18
+编译错误包总共有：
+17
 
 
